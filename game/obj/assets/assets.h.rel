@@ -1,0 +1,31 @@
+XL2
+H 1 areas 1C global symbols
+S _tiles_sp_00 Ref0000
+S _screencontrols_z_end Ref0000
+S _tiles_sp_01 Ref0000
+S _screenmenu_z_end Ref0000
+S _tiles_sp_02 Ref0000
+S _tiles_sp_03 Ref0000
+S _tiles_sp_04 Ref0000
+S _tiles_sp_05 Ref0000
+S _tiles_sp_06 Ref0000
+S _tiles_sp_07 Ref0000
+S _tiles_sp_08 Ref0000
+S _tiles_sp_09 Ref0000
+S _protagonista_sp_0 Ref0000
+S _protagonista_sp_1 Ref0000
+S _floor_ceiling_sp_0 Ref0000
+S _protagonista_sp_2 Ref0000
+S _protagonista_sp_3 Ref0000
+S _linea_pin_sp Ref0000
+S _walls_sp_0 Ref0000
+S _protagonista_pal Ref0000
+S _screenwin_z_end Ref0000
+S .__.ABS. Def0000
+S _screenhistory_z_end Ref0000
+S _song_ingame Ref0000
+S _song_menu Ref0000
+S _tierra_sp_0 Ref0000
+S _screencredits_z_end Ref0000
+S _delimitador_sp_0 Ref0000
+A _CODE size 0 flags 0 addr 0

@@ -1,0 +1,10 @@
+XL2
+H 1 areas 7 global symbols
+S man_game_init Ref0000
+S man_game_getNumGames_A Ref0000
+S man_game_restart Ref0000
+S .__.ABS. Def0000
+S man_game_next_play Ref0000
+S man_game_run Ref0000
+S man_game_continue_level Ref0000
+A _CODE size 0 flags 0 addr 0

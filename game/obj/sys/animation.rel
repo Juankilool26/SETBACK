@@ -1,0 +1,68 @@
+XL2
+H 1 areas 27 global symbols
+S _tiles_sp_00 Ref0000
+S _screencontrols_z_end Ref0000
+S _tiles_sp_01 Ref0000
+S man_entity_destroy_one Ref0000
+S _screenmenu_z_end Ref0000
+S _tiles_sp_02 Ref0000
+S _tiles_sp_03 Ref0000
+S man_entity_empty_array Ref0000
+S man_entity_getPlayer_IX Ref0000
+S _tiles_sp_04 Ref0000
+S _tiles_sp_05 Ref0000
+S _tiles_sp_06 Ref0000
+S _tiles_sp_07 Ref0000
+S _tiles_sp_08 Ref0000
+S _tiles_sp_09 Ref0000
+S _protagonista_sp_0 Ref0000
+S man_entity_set4destruction Ref0000
+S man_entity_create Ref0000
+S man_entity_init Ref0000
+S _protagonista_sp_1 Ref0000
+S _floor_ceiling_sp_0 Ref0000
+S _protagonista_sp_2 Ref0000
+S _protagonista_sp_3 Ref0000
+S man_entity_get_from_idx_IY Ref0000
+S _linea_pin_sp Ref0000
+S _walls_sp_0 Ref0000
+S _protagonista_pal Ref0000
+S _screenwin_z_end Ref0000
+S .__.ABS. Def0000
+S _screenhistory_z_end Ref0000
+S man_entity_update_forall_matching Ref0000
+S _song_ingame Ref0000
+S _song_menu Ref0000
+S _tierra_sp_0 Ref0000
+S man_entity_calculate_screen_position Ref0000
+S man_entity_update_forall Ref0000
+S _screencredits_z_end Ref0000
+S _delimitador_sp_0 Ref0000
+A _CODE size 3E flags 0 addr 0
+S sys_animation_update Def0000
+T 00 00
+R 00 00 00 00
+T 00 00 DD 7E 00 EE 04 20 0B 21 00 00 DD 75 07 DD
+R 00 00 00 00 02 0A 16 00
+T 0E 00 74 08 18 2B
+R 00 00 00 00
+T 12 00
+R 00 00 00 00
+T 12 00 DD 7E 09 3D 28 0B 21 00 00 DD 75 07 DD 74
+R 00 00 00 00 02 09 15 00
+T 20 00 08 18 1A
+R 00 00 00 00
+T 23 00
+R 00 00 00 00
+T 23 00 DD 7E 0C 3D 20 0B 21 00 00 DD 75 07 DD 74
+R 00 00 00 00 02 09 0F 00
+T 31 00 08 18 09
+R 00 00 00 00
+T 34 00
+R 00 00 00 00
+T 34 00 21 00 00 DD 75 07 DD 74 08
+R 00 00 00 00 02 03 13 00
+T 3D 00
+R 00 00 00 00
+T 3D 00 C9
+R 00 00 00 00

@@ -1,0 +1,134 @@
+XL2
+H 1 areas 2B global symbols
+S sys_physics_update_one_entity Ref0000
+S _tiles_sp_00 Ref0000
+S _screencontrols_z_end Ref0000
+S _tiles_sp_01 Ref0000
+S man_entity_destroy_one Ref0000
+S _screenmenu_z_end Ref0000
+S _tiles_sp_02 Ref0000
+S _tiles_sp_03 Ref0000
+S man_entity_empty_array Ref0000
+S man_entity_getPlayer_IX Ref0000
+S _tiles_sp_04 Ref0000
+S _tiles_sp_05 Ref0000
+S _tiles_sp_06 Ref0000
+S _tiles_sp_07 Ref0000
+S _tiles_sp_08 Ref0000
+S _tiles_sp_09 Ref0000
+S _protagonista_sp_0 Ref0000
+S man_entity_set4destruction Ref0000
+S man_entity_create Ref0000
+S man_entity_init Ref0000
+S _protagonista_sp_1 Ref0000
+S _floor_ceiling_sp_0 Ref0000
+S _protagonista_sp_2 Ref0000
+S _protagonista_sp_3 Ref0000
+S man_entity_get_from_idx_IY Ref0000
+S _linea_pin_sp Ref0000
+S _walls_sp_0 Ref0000
+S _protagonista_pal Ref0000
+S _screenwin_z_end Ref0000
+S .__.ABS. Def0000
+S _screenhistory_z_end Ref0000
+S sys_physics_update Ref0000
+S man_entity_update_forall_matching Ref0000
+S _song_ingame Ref0000
+S _song_menu Ref0000
+S _tierra_sp_0 Ref0000
+S man_entity_calculate_screen_position Ref0000
+S man_entity_update_forall Ref0000
+S _screencredits_z_end Ref0000
+S _delimitador_sp_0 Ref0000
+S sys_physics_calculate_previous_position Ref0000
+A _CODE size F9 flags 0 addr 0
+S sys_ai_control_update Def00F0
+S sys_ai_control_update_one_entity Def0000
+T 00 00
+R 00 00 00 00
+T 00 00 CD 00 00 FD 7E 0D C6 FF CA 4C 00 FD 7E 0D
+R 00 00 00 00 02 03 28 00 00 0B 00 00
+T 0E 00 C6 01 CA 2B 00 FD 7E 0D C6 FE CA 8D 00 3D
+R 00 00 00 00 00 05 00 00 00 0D 00 00
+T 1C 00 CA CF 00 FD 7E 0D C6 02 CA 6D 00 3C CA
+R 00 00 00 00 00 03 00 00 00 0B 00 00
+T 29 00 AD 00
+R 00 00 00 00 00 02 00 00
+T 2B 00
+R 00 00 00 00
+T 2B 00 FD 7E 03 FD 86 0E 28 09 FD 35 03 FD 35 01
+R 00 00 00 00
+T 39 00 C3 EF 00
+R 00 00 00 00 00 03 00 00
+T 3C 00
+R 00 00 00 00
+T 3C 00 21 00 00 FD 75 07 FD 74 08 FD 36 0D 01 C3
+R 00 00 00 00 02 03 0B 00
+T 4A 00 EF 00
+R 00 00 00 00 00 02 00 00
+T 4C 00
+R 00 00 00 00
+T 4C 00 FD 7E 03 FD BE 0E 28 09 FD 34 03 FD 34 01
+R 00 00 00 00
+T 5A 00 C3 EF 00
+R 00 00 00 00 00 03 00 00
+T 5D 00
+R 00 00 00 00
+T 5D 00 21 00 00 FD 75 07 FD 74 08 FD 36 0D FF C3
+R 00 00 00 00 02 03 0A 00
+T 6B 00 EF 00
+R 00 00 00 00 00 02 00 00
+T 6D 00
+R 00 00 00 00
+T 6D 00 FD 7E 04 FD 86 0E 28 09 FD 35 04 FD 35 02
+R 00 00 00 00
+T 7B 00 C3 EF 00
+R 00 00 00 00 00 03 00 00
+T 7E 00
+R 00 00 00 00
+T 7E 00 21 00 00 FD 75 07 FD 74 08 FD 36 0D 02 18
+R 00 00 00 00 02 03 0D 00
+T 8C 00 62
+R 00 00 00 00
+T 8D 00
+R 00 00 00 00
+T 8D 00 FD 7E 04 FD BE 0E 28 08 FD 34 04 FD 34 02
+R 00 00 00 00
+T 9B 00 18 52
+R 00 00 00 00
+T 9D 00
+R 00 00 00 00
+T 9D 00 21 00 00 FD 75 07 FD 74 08 FD 36 0D FE C3
+R 00 00 00 00 02 03 0C 00
+T AB 00 EF 00
+R 00 00 00 00 00 02 00 00
+T AD 00
+R 00 00 00 00
+T AD 00 FD 7E 04 FD 86 0E 28 0B FD 35 04 FD 35 02
+R 00 00 00 00
+T BB 00 FD 35 02 18 2F
+R 00 00 00 00
+T C0 00
+R 00 00 00 00
+T C0 00 21 00 00 FD 75 07 FD 74 08 FD 36 0D 03 18
+R 00 00 00 00 02 03 0E 00
+T CE 00 20
+R 00 00 00 00
+T CF 00
+R 00 00 00 00
+T CF 00 FD 7E 04 FD BE 0E 28 0B FD 34 04 FD 34 02
+R 00 00 00 00
+T DD 00 FD 34 02 18 0D
+R 00 00 00 00
+T E2 00
+R 00 00 00 00
+T E2 00 21 00 00 FD 75 07 FD 74 08 FD 36 0D FD
+R 00 00 00 00 02 03 0F 00
+T EF 00
+R 00 00 00 00
+T EF 00 C9
+R 00 00 00 00
+T F0 00
+R 00 00 00 00
+T F0 00 21 00 00 3E 80 CD 00 00 C9
+R 00 00 00 00 00 03 00 00 02 08 20 00

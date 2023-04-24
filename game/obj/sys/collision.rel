@@ -1,0 +1,77 @@
+XL2
+H 1 areas 10 global symbols
+S man_entity_destroy_one Ref0000
+S man_entity_empty_array Ref0000
+S man_entity_getPlayer_IX Ref0000
+S man_entity_set4destruction Ref0000
+S man_entity_create Ref0000
+S man_entity_init Ref0000
+S gravity_acc DefFFFFFFF7
+S man_entity_get_from_idx_IY Ref0000
+S sys_input_update Ref0000
+S .__.ABS. Def0000
+S man_entity_update_forall_matching Ref0000
+S man_entity_calculate_screen_position Ref0000
+S man_entity_update_forall Ref0000
+A _CODE size 9E flags 0 addr 0
+S sys_collision_update_one_entity Def0000
+S sys_collision_update Def0095
+S sys_collision_correct_position Def0073
+T 00 00
+R 00 00 00 00
+T 00 00
+R 00 00 00 00
+T 00 00 DD 7E 01 DD 86 05 3D FD 96 01 38 5B DD 7E
+R 00 00 00 00
+T 0E 00 02 DD 86 06 3D FD 96 02 38 4F FD 7E 01 FD
+R 00 00 00 00
+T 1C 00 86 05 DD 46 01 04 B8 38 42 FD 7E 02 FD 86
+R 00 00 00 00
+T 2A 00 06 DD 46 02 04 B8 38 35
+R 00 00 00 00
+T 32 00
+R 00 00 00 00
+T 32 00 FD 7E 00 E6 18 D6 18 20 16 FD 7E 00 E6 01
+R 00 00 00 00
+T 40 00 CC 73 00 FD 36 0C 01
+R 00 00 00 00 00 03 00 00
+T 47 00
+R 00 00 00 00
+T 47 00 FD 7E 00 F6 20 FD 77 00 18 21
+R 00 00 00 00
+T 51 00
+R 00 00 00 00
+T 51 00 FD 7E 00 EE 12 20 06 FD 36 00 04 18 14
+R 00 00 00 00
+T 5E 00
+R 00 00 00 00
+T 5E 00 DD 36 00 04 CD 00 00 18 0B
+R 00 00 00 00 02 07 03 00
+T 67 00
+R 00 00 00 00
+T 67 00 FD 7E 0C 3D C0 FD 36 0C 00 18 D5
+R 00 00 00 00
+T 72 00
+R 00 00 00 00
+T 72 00 C9
+R 00 00 00 00
+T 73 00
+R 00 00 00 00
+T 73 00 DD 7E 02 FD 46 02 B8 30 18 3E F7 DD 86 04
+R 00 00 00 00
+T 81 00 38 11
+R 00 00 00 00
+T 83 00
+R 00 00 00 00
+T 83 00 FD 7E 02 DD 96 06 DD 77 02 DD 36 04 00 DD
+R 00 00 00 00
+T 91 00 36 09 01
+R 00 00 00 00
+T 94 00
+R 00 00 00 00
+T 94 00 C9
+R 00 00 00 00
+T 95 00
+R 00 00 00 00
+T 95 00 21 00 00 3E 10 CD 00 00 C9
+R 00 00 00 00 00 03 00 00 02 08 0A 00

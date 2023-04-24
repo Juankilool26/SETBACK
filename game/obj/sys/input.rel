@@ -1,0 +1,88 @@
+XL2
+H 1 areas 1E global symbols
+M cpct_keyboard
+S man_entity_destroy_one Ref0000
+S cpct_limpiarPantalla_asm Ref0000
+S cpct_setPalette_asm Ref0000
+S cpct_isKeyPressed_asm Ref0000
+S cpct_scanKeyboard_f_asm Ref0000
+S man_entity_empty_array Ref0000
+S man_entity_getPlayer_IX Ref0000
+S cpct_akp_stop_asm Ref0000
+S cpct_drawStringM0_asm Ref0000
+S man_entity_set4destruction Ref0000
+S man_entity_create Ref0000
+S man_entity_init Ref0000
+S gravity_acc DefFFFFFFF7
+S cpct_interrupt_flow Ref0000
+S cpct_drawSprite_asm Ref0000
+S man_entity_get_from_idx_IY Ref0000
+S .__.ABS. Def0000
+S man_entity_update_forall_matching Ref0000
+S cpct_zx7b_decrunch_s_asm Ref0000
+S cpct_setVideoMode_asm Ref0000
+S cpct_waitVSYNC_asm Ref0000
+S man_entity_calculate_screen_position Ref0000
+S cpct_akp_musicInit_asm Ref0000
+S man_entity_update_forall Ref0000
+S cpct_disableFirmware_asm Ref0000
+S cpct_akp_musicPlay_asm Ref0000
+S cpct_drawSolidBox_asm Ref0000
+S cpct_setDrawCharM0_asm Ref0000
+S cpct_getScreenPtr_asm Ref0000
+A _CODE size 64 flags 0 addr 0
+S sys_input_update Def0000
+T 00 00
+R 00 00 00 00
+T 00 00 DD 36 03 00 CD 00 00 21 04 04 CD 00 00 28
+R 00 00 00 00 02 07 04 00 02 0D 03 00
+T 0E 00 08
+R 00 00 00 00
+T 0F 00
+R 00 00 00 00
+T 0F 00 DD 36 03 FF DD 36 0C FF
+R 00 00 00 00
+T 17 00
+R 00 00 00 00
+T 17 00 21 09 04 CD 00 00 28 08
+R 00 00 00 00 02 06 03 00
+T 1F 00
+R 00 00 00 00
+T 1F 00 DD 36 03 FF DD 36 0C FF
+R 00 00 00 00
+T 27 00
+R 00 00 00 00
+T 27 00 21 03 08 CD 00 00 28 08
+R 00 00 00 00 02 06 03 00
+T 2F 00
+R 00 00 00 00
+T 2F 00 DD 36 03 01 DD 36 0C 01
+R 00 00 00 00
+T 37 00
+R 00 00 00 00
+T 37 00 21 09 08 CD 00 00 28 08
+R 00 00 00 00 02 06 03 00
+T 3F 00
+R 00 00 00 00
+T 3F 00 DD 36 03 01 DD 36 0C 01
+R 00 00 00 00
+T 47 00
+R 00 00 00 00
+T 47 00 DD 35 09 C0 21 08 08 CD 00 00 28 04
+R 00 00 00 00 02 0A 03 00
+T 53 00
+R 00 00 00 00
+T 53 00 DD 36 04 F7
+R 00 00 00 00
+T 57 00
+R 00 00 00 00
+T 57 00 21 09 10 CD 00 00 28 04
+R 00 00 00 00 02 06 03 00
+T 5F 00
+R 00 00 00 00
+T 5F 00 DD 36 04 F7
+R 00 00 00 00
+T 63 00
+R 00 00 00 00
+T 63 00 C9
+R 00 00 00 00

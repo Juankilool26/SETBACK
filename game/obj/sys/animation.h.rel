@@ -1,0 +1,5 @@
+XL2
+H 1 areas 2 global symbols
+S .__.ABS. Def0000
+S sys_animation_update Ref0000
+A _CODE size 0 flags 0 addr 0

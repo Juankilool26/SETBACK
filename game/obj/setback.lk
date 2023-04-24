@@ -1,0 +1,53 @@
+-mjwx
+-i obj/setback.ihx
+-b _CODE = 0x18da
+-b _DATA = 0x0000
+-u
+-k /home/gabriel/Escritorio/Videojuegos/cpctelera/cpctelera/tools/sdcc-3.6.8-r9946/bin/../share/sdcc/lib/z80
+-k /home/gabriel/Escritorio/Videojuegos/cpctelera/cpctelera/tools/sdcc-3.6.8-r9946/share/sdcc/lib/z80
+-l /home/gabriel/Escritorio/Videojuegos/cpctelera/cpctelera/cpctelera.lib
+-l z80
+obj/sprites/tierra.rel
+obj/sprites/delimitador.rel
+obj/sprites/lineadepinxos.rel
+obj/sprites/tiles.rel
+obj/sprites/walls.rel
+obj/sprites/floor_ceiling.rel
+obj/sprites/protagonista.rel
+img/screenwin_z.rel
+img/screencontrols_z.rel
+img/screenhistory_z.rel
+img/screencredits_z.rel
+img/screenmenu_z.rel
+music/ingame.rel
+music/menu.rel
+obj/sprites/sWin.h.rel
+obj/sprites/sControls.h.rel
+obj/sprites/sHistory.h.rel
+obj/sprites/sCredits.h.rel
+obj/sprites/sMenu.h.rel
+obj/cpctelera_functions.h.rel
+obj/main.rel
+obj/sys/ai_control.h.rel
+obj/sys/ai_control.rel
+obj/sys/animation.h.rel
+obj/sys/animation.rel
+obj/sys/collision.h.rel
+obj/sys/collision.rel
+obj/sys/input.h.rel
+obj/sys/input.rel
+obj/sys/physics.h.rel
+obj/sys/physics.rel
+obj/sys/render.h.rel
+obj/sys/render.rel
+obj/man/entity.h.rel
+obj/man/entity.rel
+obj/man/game.h.rel
+obj/man/game.rel
+obj/man/interrupcion.h.rel
+obj/man/interrupcion.rel
+obj/man/menu.h.rel
+obj/man/menu.rel
+obj/assets/assets.h.rel
+
+-e

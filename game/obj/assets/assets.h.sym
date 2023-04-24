@@ -1,0 +1,24 @@
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 1.
+Hexadecimal [16-Bits]
+
+Symbol Table
+
+    .__.$$$.=  2710 L   |     .__.ABS.=  0000 G   |     .__.CPU.=  0000 L
+    .__.H$L.=  0000 L   |     _delimit   **** GX  |     _floor_c   **** GX
+    _linea_p   **** GX  |     _protago   **** GX  |     _protago   **** GX
+    _protago   **** GX  |     _protago   **** GX  |     _protago   **** GX
+    _screenc   **** GX  |     _screenc   **** GX  |     _screenh   **** GX
+    _screenm   **** GX  |     _screenw   **** GX  |     _song_in   **** GX
+    _song_me   **** GX  |     _tierra_   **** GX  |     _tiles_s   **** GX
+    _tiles_s   **** GX  |     _tiles_s   **** GX  |     _tiles_s   **** GX
+    _tiles_s   **** GX  |     _tiles_s   **** GX  |     _tiles_s   **** GX
+    _tiles_s   **** GX  |     _tiles_s   **** GX  |     _tiles_s   **** GX
+    _walls_s   **** GX
+
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 2.
+Hexadecimal [16-Bits]
+
+Area Table
+
+   0 _CODE      size    0   flags    0
+

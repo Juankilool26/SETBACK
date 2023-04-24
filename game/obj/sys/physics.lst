@@ -1,0 +1,492 @@
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 1.
+Hexadecimal [16-Bits]
+
+
+
+                              1 ;; This file is part of SETBACK.
+                              2 ;; Copyright (C) 2020 TCore (@TCore14)
+                              3 ;;
+                              4 ;; This program is free software: you can redistribute it and/or modify
+                              5 ;; it under the terms of the GNU General Public License as published by
+                              6 ;; the Free Software Foundation, either version 3 of the License, or
+                              7 ;; (at your option) any later version.
+                              8 ;;
+                              9 ;; This program is distributed in the hope that it will be useful,
+                             10 ;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+                             11 ;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+                             12 ;; GNU General Public License for more details.
+                             13 ;;
+                             14 ;; You should have received a copy of the GNU General Public License
+                             15 ;; along with this program.  If not, see https://www.gnu.org/licenses/.
+                             16 
+                             17 ;;
+                             18 ;; PHYSICS SYSTEM
+                             19 ;;
+                             20 
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 2.
+Hexadecimal [16-Bits]
+
+
+
+                             21 .include "cpctelera_functions.h.s"
+                              1 ;; This file is part of SETBACK.
+                              2 ;; Copyright (C) 2020 TCore (@TCore14)
+                              3 ;;
+                              4 ;; This program is free software: you can redistribute it and/or modify
+                              5 ;; it under the terms of the GNU General Public License as published by
+                              6 ;; the Free Software Foundation, either version 3 of the License, or
+                              7 ;; (at your option) any later version.
+                              8 ;;
+                              9 ;; This program is distributed in the hope that it will be useful,
+                             10 ;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+                             11 ;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+                             12 ;; GNU General Public License for more details.
+                             13 ;;
+                             14 ;; You should have received a copy of the GNU General Public License
+                             15 ;; along with this program.  If not, see https://www.gnu.org/licenses/.
+                             16 
+                             17 ;;
+                             18 ;; CPCTELERA FUNCTIONS
+                             19 ;;
+                             20 
+                             21 
+                             22 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                             23 ;;;;;;;;;;; FUNCIONES PUBLICAS ;;;;;;;;;;;;;;;
+                             24 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                             25 
+                             26 .globl cpct_getScreenPtr_asm
+                             27 .globl cpct_drawSolidBox_asm
+                             28 .globl cpct_disableFirmware_asm
+                             29 .globl cpct_waitVSYNC_asm
+                             30 .globl cpct_scanKeyboard_f_asm
+                             31 .globl cpct_isKeyPressed_asm
+                             32 .globl cpct_setVideoMode_asm
+                             33 .globl cpct_setPalette_asm
+                             34 .globl cpct_drawStringM0_asm
+                             35 .globl cpct_setDrawCharM0_asm
+                             36 .globl cpct_drawSprite_asm
+                             37 .globl cpct_limpiarPantalla_asm
+                             38 .globl cpct_akp_musicInit_asm
+                             39 .globl cpct_interrupt_flow
+                             40 .globl cpct_akp_musicPlay_asm
+                             41 .globl cpct_akp_stop_asm
+                             42 .globl cpct_zx7b_decrunch_s_asm
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 3.
+Hexadecimal [16-Bits]
+
+
+
+                             22 .include "man/entity.h.s"
+                              1 ;; This file is part of SETBACK.
+                              2 ;; Copyright (C) 2020 TCore (@TCore14)
+                              3 ;;
+                              4 ;; This program is free software: you can redistribute it and/or modify
+                              5 ;; it under the terms of the GNU General Public License as published by
+                              6 ;; the Free Software Foundation, either version 3 of the License, or
+                              7 ;; (at your option) any later version.
+                              8 ;;
+                              9 ;; This program is distributed in the hope that it will be useful,
+                             10 ;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+                             11 ;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+                             12 ;; GNU General Public License for more details.
+                             13 ;;
+                             14 ;; You should have received a copy of the GNU General Public License
+                             15 ;; along with this program.  If not, see https://www.gnu.org/licenses/.
+                             16 
+                             17 ;;
+                             18 ;; ENTITY MANAGER
+                             19 ;;
+                             20 
+                             21 
+                             22 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                             23 ;;;;;;;;;;; FUNCIONES PUBLICAS ;;;;;;;;;;;;;;;
+                             24 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                             25 
+                             26 .globl man_entity_init
+                             27 .globl man_entity_create
+                             28 .globl man_entity_getPlayer_IX
+                             29 .globl man_entity_get_from_idx_IY
+                             30 .globl man_entity_update_forall
+                             31 .globl man_entity_update_forall_matching
+                             32 .globl man_entity_calculate_screen_position
+                             33 .globl man_entity_set4destruction
+                             34 .globl man_entity_destroy_one
+                             35 .globl man_entity_empty_array
+                             36 
+                             37 
+                             38 
+                             39 
+                             40 
+                             41 
+                             42 
+                             43 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                             44 ;;;;;;;;;;; DEFINICIONES MACROS ;;;;;;;;;;;;;;
+                             45 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                             46 
+                             47 ;; Entity definicion anonima de macro
+                             48 .macro DefineEntityAnnonimous _type, _x, _y, _vx, _vy, _w, _h, _sprite, _jump, _lastPtr, _state, _walking, _distance
+                             49    .db _type
+                             50    .db _x
+                             51    .db _y
+                             52    .db _vx
+                             53    .db _vy
+                             54    .db _w
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 4.
+Hexadecimal [16-Bits]
+
+
+
+                             55    .db _h
+                             56    .dw _sprite
+                             57    .db _jump
+                             58    .dw _lastPtr
+                             59    .db _state        ; Lo usamos para saber cuando una plataforma deja de renderizarse (Arreglamos el trozo que no se pintaba de la plataforma)
+                             60                      ; y para guardar la ultima direccion pulsada por el player para moverse (Cambiar la animacion)
+                             61    .db _walking      ; y para guardar el estado de la IA de los enemigos
+                             62    .db _distance     ; Maxima distancia recorrida por los enemigos
+                             63                      ; y booleano para comprobar si es una plataforma o una estrella
+                             64 .endm
+                             65 
+                             66 
+                             67 ;; Definimos una entidad identificada por su etiqueta nombre
+                             68 .macro DefineEntity _name, _type, _x, _y, _vx, _vy, _w, _h, _sprite, _jump, _lastPtr, _state, _walking, _distance
+                             69 _name::
+                             70    DefineEntityAnnonimous _type, _x, _y, _vx, _vy, _w, _h, _sprite, _jump, _lastPtr, _state, _walking, _distance
+                             71 .endm
+                             72 
+                             73 
+                             74 ;; Definimos un array de entidades anonimas
+                             75 .macro DefineEntityArray _name, _N
+                             76 _name::
+                             77    .rept _N
+                             78       DefineEntityAnnonimous 0x00, 0xDE, 0xAD, 0xDE, 0xAD, 0xDE, 0xAD, 0xDE00, 0xAD, 0xC000, 0x00, 0x00, 0x00
+                             79    .endm
+                             80 .endm
+                             81 
+                             82 
+                             83 
+                             84 
+                             85 
+                             86 
+                             87 
+                             88 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                             89 ;;;;;;;;;;; TIPOS DE ENTIDADES ;;;;;;;;;;;;;;;
+                             90 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                             91 
+                             92 ;; Numero de bits para la mascara
+                     0007    93 e_type_alive_bit    = 7
+                     0006    94 e_type_physics_bit  = 6
+                     0005    95 e_type_render_bit   = 5
+                     0004    96 e_type_collider_bit = 4
+                     0003    97 e_type_input_bit    = 3
+                     0002    98 e_type_dead_bit     = 2
+                     0001    99 e_type_portal_bit   = 1
+                            100 
+                            101 ;; Tipos de entidades (mascaras)
+                     0000   102 e_type_invalid      = 0x00
+                     0080   103 e_type_alive_mask   = (1 << e_type_alive_bit)
+                     0040   104 e_type_physics_mask = (1 << e_type_physics_bit)
+                     0020   105 e_type_render_mask  = (1 << e_type_render_bit)
+                     0010   106 e_type_collide_mask = (1 << e_type_collider_bit)
+                     0008   107 e_type_input_mask   = (1 << e_type_input_bit)
+                     0004   108 e_type_dead_mask    = (1 << e_type_dead_bit)
+                     0002   109 e_type_portal_mask  = (1 << e_type_portal_bit)
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 5.
+Hexadecimal [16-Bits]
+
+
+
+                            110 
+                            111 
+                            112 ;; Entidades especificas
+                     0070   113 e_type_character = e_type_physics_mask | e_type_collide_mask | e_type_render_mask
+                     0078   114 e_type_player    = e_type_character | e_type_input_mask
+                     0010   115 e_type_trap      = e_type_collide_mask
+                     0018   116 e_type_platform  = e_type_trap | e_type_input_mask
+                     00B0   117 e_type_enemy     = e_type_trap | e_type_alive_mask | e_type_render_mask
+                     0012   118 e_type_portal    = e_type_trap | e_type_portal_mask
+                     0019   119 e_type_star      = e_type_platform | 1
+                            120 
+                            121 
+                            122 
+                            123 
+                            124 
+                            125 
+                            126 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                            127 ;;;;;;;;;;;;;;; CONSTANTES ;;;;;;;;;;;;;;;;;;;
+                            128 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                            129 
+                            130 ;; Constantes para posicionar cada componente de la entidad usando los registros IX e IY
+                     0000   131 e_type     = 0
+                     0001   132 e_x        = 1
+                     0002   133 e_y        = 2
+                     0003   134 e_vx       = 3
+                     0004   135 e_vy       = 4
+                     0005   136 e_w        = 5
+                     0006   137 e_h        = 6
+                     0007   138 e_sp_l     = 7
+                     0008   139 e_sp_h     = 8
+                     0009   140 e_jump     = 9
+                     000A   141 e_lastPtr  = 10
+                     000C   142 e_state    = 12
+                     000D   143 e_walking  = 13
+                     000E   144 e_distance = 14
+                     000F   145 sizeof_e   = 15
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 6.
+Hexadecimal [16-Bits]
+
+
+
+                             23 .include "render.h.s"
+                              1 ;; This file is part of SETBACK.
+                              2 ;; Copyright (C) 2020 TCore (@TCore14)
+                              3 ;;
+                              4 ;; This program is free software: you can redistribute it and/or modify
+                              5 ;; it under the terms of the GNU General Public License as published by
+                              6 ;; the Free Software Foundation, either version 3 of the License, or
+                              7 ;; (at your option) any later version.
+                              8 ;;
+                              9 ;; This program is distributed in the hope that it will be useful,
+                             10 ;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+                             11 ;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+                             12 ;; GNU General Public License for more details.
+                             13 ;;
+                             14 ;; You should have received a copy of the GNU General Public License
+                             15 ;; along with this program.  If not, see https://www.gnu.org/licenses/.
+                             16 
+                             17 ;;
+                             18 ;; RENDER SYSTEM
+                             19 ;;
+                             20 
+                             21 
+                             22 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                             23 ;;;;;;;;;;; FUNCIONES PUBLICAS ;;;;;;;;;;;;;;;
+                             24 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                             25 
+                             26 .globl sys_render_init
+                             27 .globl sys_render_update_all
+                             28 .globl sys_render_update
+                             29 .globl sys_render_update_clear
+                             30 .globl sys_render_update_one_entity
+                             31 
+                             32 
+                             33 
+                             34 
+                             35 
+                             36 
+                             37 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                             38 ;;;;;;;;;;;;;;; CONSTANTES ;;;;;;;;;;;;;;;;;;;
+                             39 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                             40 
+                     C000    41 screen_start = 0xC000           ; Inicio de la pantalla
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 7.
+Hexadecimal [16-Bits]
+
+
+
+                             24 .include "input.h.s"
+                              1 ;; This file is part of SETBACK.
+                              2 ;; Copyright (C) 2020 TCore (@TCore14)
+                              3 ;;
+                              4 ;; This program is free software: you can redistribute it and/or modify
+                              5 ;; it under the terms of the GNU General Public License as published by
+                              6 ;; the Free Software Foundation, either version 3 of the License, or
+                              7 ;; (at your option) any later version.
+                              8 ;;
+                              9 ;; This program is distributed in the hope that it will be useful,
+                             10 ;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+                             11 ;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+                             12 ;; GNU General Public License for more details.
+                             13 ;;
+                             14 ;; You should have received a copy of the GNU General Public License
+                             15 ;; along with this program.  If not, see https://www.gnu.org/licenses/.
+                             16 
+                             17 ;;
+                             18 ;; INPUT SYSTEM
+                             19 ;;
+                             20 
+                             21 
+                             22 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                             23 ;;;;;;;;;;; FUNCIONES PUBLICAS ;;;;;;;;;;;;;;;
+                             24 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                             25 
+                             26 ;.globl sys_input_init
+                             27 .globl sys_input_update
+                             28 
+                             29 
+                             30 
+                             31 
+                             32 
+                             33 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                             34 ;;;;;;;;;;;;;;; CONSTANTES ;;;;;;;;;;;;;;;;;;;
+                             35 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                             36 
+                     FFFFFFF7    37 gravity_acc == -9           ; Aceleracion maxima de la gravedad
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 8.
+Hexadecimal [16-Bits]
+
+
+
+                             25 
+                             26 
+                             27 
+                             28 
+                             29 ;; CONSTANTS
+                     0050    30 screen_width  = 80
+                     00C8    31 screen_height = 200
+                             32 
+                             33 
+                             34 
+                             35 
+                             36 
+                             37 
+                             38 ;; Actualiza las fisicas de la entidad pasada por parametro
+                             39 ;; INPUTS
+                             40 ;;      IY: puntero a la entidad actualizar
+                             41 ;; DESTROYS
+                             42 ;;      AF, BC, DE
+                             43 ;; RETURN
+                             44 ;;      HL: Posicion anterior
+   0000                      45 sys_physics_calculate_previous_position::
+                             46 
+                             47     ;; Averiguamos la posicion de memoria anterior que se pinta para borrarla en el render
+   0000 11 00 C0      [10]   48     ld     de, #screen_start      ; DE = Pointer to start of the screen
+   0003 FD 4E 01      [19]   49     ld      c, e_x(iy)            ; x
+   0006 FD 46 02      [19]   50     ld      b, e_y(iy)            ; y
+   0009 CD 00 00      [17]   51     call   cpct_getScreenPtr_asm
+   000C FD 75 0A      [19]   52     ld     e_lastPtr  (iy), l
+   000F FD 74 0B      [19]   53     ld     e_lastPtr+1(iy), h
+   0012 C9            [10]   54     ret
+                             55 
+                             56 
+                             57 
+                             58 
+                             59 
+                             60 
+                             61 
+                             62 
+                             63 
+                             64 ;; Actualiza las fisicas de la entidad pasada por parametro
+                             65 ;; INPUTS
+                             66 ;;      IY: puntero a la entidad actualizar
+                             67 ;; DESTROYS
+                             68 ;;      AF, BC, DE
+                             69 ;; RETURN
+                             70 ;;      HL: Posicion anterior
+   0013                      71 sys_physics_update_one_entity::
+                             72 
+                             73     ;; Guardamos la posicion de memoria anterior
+   0013 CD 00 00      [17]   74     call    sys_physics_calculate_previous_position
+                             75     
+                             76     ;; Devolvemos la posicion actual en Y
+   0016 FD 66 02      [19]   77     ld      h, e_y(iy)           ; y
+                             78 
+                             79     ;; ACTUALIZAMOS X
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 9.
+Hexadecimal [16-Bits]
+
+
+
+                             80     ;; Comprobamos la posicion en el eje x que puede moverse como maximo
+   0019 3E 50         [ 7]   81     ld      a, #screen_width
+   001B FD 96 05      [19]   82     sub     e_w(iy)
+   001E 4F            [ 4]   83     ld      c, a                ; C contiene la maxima posicion x
+                             84 
+   001F FD 7E 01      [19]   85     ld      a, e_x(iy)          ; Guardamos en A la posicion
+   0022 FD 86 03      [19]   86     add     e_vx(iy)            ; Le sumamos la velocidad
+   0025 B9            [ 4]   87     cp      c                   ; y le restamos el total del ancho de la ventana
+   0026 30 05         [12]   88     jr      nc, invalid_x       ; Si produce acarreo es una posicion valida
+   0028                      89 valid_x:
+   0028 FD 77 01      [19]   90     ld      e_x(iy), a          ; Nos guardamos la nueva posicion
+   002B 18 12         [12]   91     jr      endif_x
+   002D                      92 invalid_x:                      ; Si no produce accarreo comprobamos el borde
+   002D FD 7E 03      [19]   93     ld      a, e_vx(iy)
+   0030 FD 46 03      [19]   94     ld      b, e_vx(iy)         ; Guardamos en B y A la velocidad para resetear posiciones
+   0033 80            [ 4]   95     add     a, b                ; Sumamos velocidades
+   0034 38 05         [12]   96     jr      c, start_x          ; Produce acarreo si la velocidad es negativa
+   0036                      97 end_x:
+   0036 FD 71 01      [19]   98     ld      e_x(iy), c
+   0039 18 04         [12]   99     jr      endif_x
+   003B                     100 start_x:
+   003B FD 36 01 00   [19]  101     ld      e_x(iy), #0
+   003F                     102 endif_x:
+                            103 
+                            104 
+                            105     ;; ACTUALIZAMOS Y
+   003F FD 34 04      [23]  106     inc     e_vy(iy)            ; Incrementamos la velocidad del jugador en y
+                            107 
+                            108     ;; Cambiamos la posicion
+   0042 FD 7E 02      [19]  109     ld      a, e_y(iy)          ; Cargamos en A la velocidad
+   0045 FD 86 04      [19]  110     add     e_vy(iy)            ; Le sumamos la velocidad para dar el efecto de gravedad y movimiento
+   0048 FD 77 02      [19]  111     ld      e_y(iy), a          ; Guardamos la nueva posicion para renderizar
+   004B 4F            [ 4]  112     ld      c, a                ; Guardamos la nueva posicion en C temporalmente
+                            113 
+                            114 
+                            115     ;; Aseguramos que la gravedad no aumente la velocidad para siempre
+   004C FD 7E 04      [19]  116     ld      a, e_vy(iy)
+   004F C6 F7         [ 7]  117     add     #gravity_acc        ; Si v_actual-v_inicial != 0
+   0051 20 03         [12]  118     jr     nz, _keep_speed      ; No decrementes la velocidad
+   0053                     119 _change_speed:
+   0053 FD 35 04      [23]  120     dec     e_vy(iy)
+   0056                     121 _keep_speed:
+                            122 
+                            123 
+                            124     ;; Comprobamos que no salga de la pantalla
+                            125     ;; if  e_y < (screen_height - e_h) Se sale por abajo
+   0056 3E C8         [ 7]  126     ld      a, #screen_height           ; Guardamos en A el alto de la pantalla
+   0058 FD 96 06      [19]  127     sub     e_h(iy)                     ; Le restamos el alto del personaje
+   005B 47            [ 4]  128     ld      b, a                        ; y lo guardamos en B
+   005C 3E 00         [ 7]  129     ld      a, #256                     ; Guardamos en A el total de valores representado con un byte (0-255 -> 256)
+   005E 90            [ 4]  130     sub     b                           ; Le restamos la maxima posicion en y que puede alcanzar el pj guardado en B
+   005F 81            [ 4]  131     add     c                           ; Le sumamos la nueva posicion del objeto
+   0060 D0            [11]  132     ret     nc                          ; Si la operacion no produce acarreo entonces es valida e_y
+                            133 
+                            134     ;; Comprobamos si el personaje ha salido de la pantalla por arriba o por abajo
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 10.
+Hexadecimal [16-Bits]
+
+
+
+   0061 7C            [ 4]  135     ld      a, h                        ; A = Anterior posicion en Y
+   0062 FE 64         [ 7]  136     cp      #100                        ; A = A - 100 (mitad de alto de la pantalla)
+   0064 30 0A         [12]  137     jr     nc, _invalid_y_bottom
+                            138 
+   0066                     139 _invalid_y_top:
+   0066 FD 36 02 00   [19]  140     ld      e_y(iy),#0
+   006A FD 36 04 00   [19]  141     ld      e_vy(iy), #0                ; Cambiamos la velocidad a 0 para que no se pueda mover
+   006E 18 0C         [12]  142     jr      _end_update_physics
+                            143 
+   0070                     144 _invalid_y_bottom:
+   0070 FD 36 04 00   [19]  145     ld      e_vy(iy), #0                ; Cambiamos la velocidad a 0 para que no se pueda mover
+   0074 78            [ 4]  146     ld      a, b                        ; Y posicionamos al fondo de la pantalla
+   0075 FD 77 02      [19]  147     ld      e_y(iy), a
+   0078 FD 36 09 01   [19]  148     ld      e_jump(iy), #1              ; Permitimos al player saltar
+                            149 
+   007C                     150 _end_update_physics:
+   007C C9            [10]  151     ret
+                            152 
+                            153 
+                            154 
+                            155 
+                            156 
+                            157 
+                            158 
+                            159 ;; Actualiza las fisicas de todas las entidades
+                            160 ;; INPUT
+                            161 ;;      0
+                            162 ;; DESTROY
+                            163 ;;      AF, BC, HL, IX, IY
+                            164 ;; RETURN
+                            165 ;;      IX: Puntero a la primera entidad libre del array
+   007D                     166 sys_physics_update::
+                            167 
+                            168     ;; Actualizamos las fisicas del jugador
+   007D 3E 00         [ 7]  169     ld      a, #0                                               ; Posicion del player en el array
+   007F CD 00 00      [17]  170     call    man_entity_get_from_idx_IY                          ; Guardamos su puntero en IY
+   0082 CD 13 00      [17]  171     call    sys_physics_update_one_entity
+                            172 
+                            173     ;; Actualizamos las fisicas de las entidades
+                            174     ;ld      hl, #sys_physics_update_one_entity                  ; Guardamos en IY un puntero a la rutina
+                            175     ;ld       a, #e_type_physics_mask                            ; Actualizamos las fisicas de los personajes
+                            176     ;call    man_entity_update_forall_matching                   ; Llamamos a la funcion de actualizar
+   0085 C9            [10]  177     ret

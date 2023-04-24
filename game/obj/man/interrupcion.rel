@@ -1,0 +1,81 @@
+XL2
+H 1 areas 31 global symbols
+M cpct_keyboard
+S _tiles_sp_00 Ref0000
+S _screencontrols_z_end Ref0000
+S _tiles_sp_01 Ref0000
+S _screenmenu_z_end Ref0000
+S _tiles_sp_02 Ref0000
+S _tiles_sp_03 Ref0000
+S cpct_limpiarPantalla_asm Ref0000
+S cpct_setPalette_asm Ref0000
+S cpct_isKeyPressed_asm Ref0000
+S cpct_scanKeyboard_f_asm Ref0000
+S _tiles_sp_04 Ref0000
+S _tiles_sp_05 Ref0000
+S _tiles_sp_06 Ref0000
+S _tiles_sp_07 Ref0000
+S _tiles_sp_08 Ref0000
+S _tiles_sp_09 Ref0000
+S cpct_akp_stop_asm Ref0000
+S _protagonista_sp_0 Ref0000
+S cpct_drawStringM0_asm Ref0000
+S _protagonista_sp_1 Ref0000
+S _floor_ceiling_sp_0 Ref0000
+S _protagonista_sp_2 Ref0000
+S cpct_interrupt_flow Ref0000
+S _protagonista_sp_3 Ref0000
+S cpct_drawSprite_asm Ref0000
+S _linea_pin_sp Ref0000
+S _walls_sp_0 Ref0000
+S _protagonista_pal Ref0000
+S _screenwin_z_end Ref0000
+S .__.ABS. Def0000
+S _screenhistory_z_end Ref0000
+S _song_ingame Ref0000
+S _song_menu Ref0000
+S cpct_zx7b_decrunch_s_asm Ref0000
+S cpct_setVideoMode_asm Ref0000
+S cpct_waitVSYNC_asm Ref0000
+S _tierra_sp_0 Ref0000
+S cpct_akp_musicInit_asm Ref0000
+S cpct_disableFirmware_asm Ref0000
+S cpct_akp_musicPlay_asm Ref0000
+S cpct_drawSolidBox_asm Ref0000
+S _screencredits_z_end Ref0000
+S _delimitador_sp_0 Ref0000
+S cpct_setDrawCharM0_asm Ref0000
+S cpct_getScreenPtr_asm Ref0000
+A _CODE size 37 flags 0 addr 0
+S int_handler Def0001
+S man_int_load_ingame_song Def0030
+S man_int_load_menu_song Def0029
+S set_int_handler Def001A
+T 00 00 06
+R 00 00 00 00
+T 01 00
+R 00 00 00 00
+T 01 00 F5 C5 D5 E5 3A 00 00 3D 20 05
+R 00 00 00 00 00 07 00 00
+T 0B 00
+R 00 00 00 00
+T 0B 00 CD 00 00 3E 06
+R 00 00 00 00 02 03 27 00
+T 10 00
+R 00 00 00 00
+T 10 00 32 00 00 E1 D1 C1 F1 FB ED 4D
+R 00 00 00 00 00 03 00 00
+T 1A 00
+R 00 00 00 00
+T 1A 00 21 38 00 36 C3 23 36 01 00 23 36 01 00 23
+R 00 00 00 00 09 09 00 00 89 0D 00 00
+T 26 00 36 C9 C9
+R 00 00 00 00
+T 29 00
+R 00 00 00 00
+T 29 00 11 00 00 CD 00 00 C9
+R 00 00 00 00 02 03 20 00 02 06 25 00
+T 30 00
+R 00 00 00 00
+T 30 00 11 00 00 CD 00 00 C9
+R 00 00 00 00 02 03 1F 00 02 06 25 00

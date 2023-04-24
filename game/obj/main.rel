@@ -1,0 +1,81 @@
+XL2
+H 2 areas 20 global symbols
+M cpct_keyboard
+S man_menu_pause_run Ref0000
+S man_menu_run Ref0000
+S cpct_setPalette_asm Ref0000
+S cpct_isKeyPressed_asm Ref0000
+S cpct_scanKeyboard_f_asm Ref0000
+S man_game_init Ref0000
+S cpct_akp_stop_asm Ref0000
+S man_int_load_ingame_song Ref0000
+S cpct_drawStringM0_asm Ref0000
+S cpct_drawSprite_asm Ref0000
+S man_int_load_menu_song Ref0000
+S man_game_getNumGames_A Ref0000
+S man_game_restart Ref0000
+S .__.ABS. Def0000
+S man_menu_init Ref0000
+S man_game_next_play Ref0000
+S man_game_run Ref0000
+S man_game_continue_level Ref0000
+S man_menu_win_run Ref0000
+S cpct_zx7b_decrunch_s_asm Ref0000
+S cpct_setVideoMode_asm Ref0000
+S cpct_waitVSYNC_asm Ref0000
+S set_int_handler Ref0000
+S cpct_akp_musicInit_asm Ref0000
+S cpct_disableFirmware_asm Ref0000
+S cpct_akp_musicPlay_asm Ref0000
+S cpct_drawSolidBox_asm Ref0000
+S cpct_setDrawCharM0_asm Ref0000
+S cpct_getScreenPtr_asm Ref0000
+A _CODE size 69 flags 0 addr 0
+S _main Def0000
+S cpct_limpiarPantalla_asm Def0056
+S cpct_interrupt_flow Def0064
+A _DATA size 0 flags 0 addr 0
+T 00 00
+R 00 00 00 00
+T 00 00 CD 00 00
+R 00 00 00 00 02 03 16 00
+T 03 00
+R 00 00 00 00
+T 03 00 CD 56 00 CD 00 00 CD 00 00 CD
+R 00 00 00 00 00 03 00 00 02 06 0A 00 02 09 0E 00
+T 0D 00 00 00 CD 00 00 CD 00 00 CD
+R 00 00 00 00 02 02 01 00 02 05 06 00 02 08 07 00
+T 16 00 00 00 B7 20 05 CD 00 00 18 03
+R 00 00 00 00 02 02 0B 00 02 08 05 00
+T 20 00
+R 00 00 00 00
+T 20 00 CD 00 00
+R 00 00 00 00 02 03 0C 00
+T 23 00
+R 00 00 00 00
+T 23 00 CD 00 00 47 3E 13 90 30 05 CD 00 00 18 D2
+R 00 00 00 00 02 03 10 00 02 0C 12 00
+T 31 00
+R 00 00 00 00
+T 31 00 CD 00 00 21 08 04 CD 00 00 28 0E CD 00 00
+R 00 00 00 00 02 03 04 00 02 09 03 00 02 0E 00 00
+T 3F 00 B7 28 05 CD 00 00 18 BC
+R 00 00 00 00 02 06 0F 00
+T 47 00
+R 00 00 00 00
+T 47 00 CD 00 00
+R 00 00 00 00 02 03 11 00
+T 4A 00
+R 00 00 00 00
+T 4A 00 76 76 CD 00 00 76 76 CD 00 00 18 CD
+R 00 00 00 00 02 05 15 00 02 0A 15 00
+T 56 00
+R 00 00 00 00
+T 56 00 21 00 C0 11 01 C0 01 00 40 36 00 ED B0 C9
+R 00 00 00 00
+T 64 00
+R 00 00 00 00
+T 64 00
+R 00 00 00 00
+T 64 00 76 3D 20 FC C9
+R 00 00 00 00

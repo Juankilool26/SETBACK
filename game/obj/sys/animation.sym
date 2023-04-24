@@ -1,0 +1,41 @@
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 1.
+Hexadecimal [16-Bits]
+
+Symbol Table
+
+    .__.$$$.=  2710 L   |     .__.ABS.=  0000 G   |     .__.CPU.=  0000 L
+    .__.H$L.=  0000 L   |   0 _check_a   0012 R   |   0 _check_r   0034 R
+  0 _check_s   0023 R   |     _delimit   **** GX  |   0 _finish_   003D R
+    _floor_c   **** GX  |     _linea_p   **** GX  |     _protago   **** GX
+    _protago   **** GX  |     _protago   **** GX  |     _protago   **** GX
+    _protago   **** GX  |     _screenc   **** GX  |     _screenc   **** GX
+    _screenh   **** GX  |     _screenm   **** GX  |     _screenw   **** GX
+    _song_in   **** GX  |     _song_me   **** GX  |     _tierra_   **** GX
+    _tiles_s   **** GX  |     _tiles_s   **** GX  |     _tiles_s   **** GX
+    _tiles_s   **** GX  |     _tiles_s   **** GX  |     _tiles_s   **** GX
+    _tiles_s   **** GX  |     _tiles_s   **** GX  |     _tiles_s   **** GX
+    _tiles_s   **** GX  |     _walls_s   **** GX  |     e_distan=  000E 
+    e_h     =  0006     |     e_jump  =  0009     |     e_lastPt=  000A 
+    e_sp_h  =  0008     |     e_sp_l  =  0007     |     e_state =  000C 
+    e_type  =  0000     |     e_type_a=  0007     |     e_type_a=  0080 
+    e_type_c=  0070     |     e_type_c=  0010     |     e_type_c=  0004 
+    e_type_d=  0002     |     e_type_d=  0004     |     e_type_e=  00B0 
+    e_type_i=  0003     |     e_type_i=  0008     |     e_type_i=  0000 
+    e_type_p=  0006     |     e_type_p=  0040     |     e_type_p=  0018 
+    e_type_p=  0078     |     e_type_p=  0012     |     e_type_p=  0001 
+    e_type_p=  0002     |     e_type_r=  0005     |     e_type_r=  0020 
+    e_type_s=  0019     |     e_type_t=  0010     |     e_vx    =  0003 
+    e_vy    =  0004     |     e_w     =  0005     |     e_walkin=  000D 
+    e_x     =  0001     |     e_y     =  0002     |     man_enti   **** GX
+    man_enti   **** GX  |     man_enti   **** GX  |     man_enti   **** GX
+    man_enti   **** GX  |     man_enti   **** GX  |     man_enti   **** GX
+    man_enti   **** GX  |     man_enti   **** GX  |     man_enti   **** GX
+    sizeof_e=  000F     |   0 sys_anim   0000 GR
+
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 2.
+Hexadecimal [16-Bits]
+
+Area Table
+
+   0 _CODE      size   3E   flags    0
+

@@ -1,0 +1,14 @@
+XL2
+H 1 areas B global symbols
+S man_entity_destroy_one Ref0000
+S man_entity_empty_array Ref0000
+S man_entity_getPlayer_IX Ref0000
+S man_entity_set4destruction Ref0000
+S man_entity_create Ref0000
+S man_entity_init Ref0000
+S man_entity_get_from_idx_IY Ref0000
+S .__.ABS. Def0000
+S man_entity_update_forall_matching Ref0000
+S man_entity_calculate_screen_position Ref0000
+S man_entity_update_forall Ref0000
+A _CODE size 0 flags 0 addr 0

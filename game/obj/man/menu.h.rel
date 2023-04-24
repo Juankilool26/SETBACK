@@ -1,0 +1,8 @@
+XL2
+H 1 areas 5 global symbols
+S man_menu_pause_run Ref0000
+S man_menu_run Ref0000
+S .__.ABS. Def0000
+S man_menu_init Ref0000
+S man_menu_win_run Ref0000
+A _CODE size 0 flags 0 addr 0

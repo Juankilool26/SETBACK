@@ -1,0 +1,44 @@
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 1.
+Hexadecimal [16-Bits]
+
+Symbol Table
+
+    .__.$$$.=  2710 L   |     .__.ABS.=  0000 G   |     .__.CPU.=  0000 L
+    .__.H$L.=  0000 L   |   0 _change_   0053 R   |   0 _end_upd   007C R
+  0 _invalid   0070 R   |   0 _invalid   0066 R   |   0 _keep_sp   0056 R
+    cpct_akp   **** GX  |     cpct_akp   **** GX  |     cpct_akp   **** GX
+    cpct_dis   **** GX  |     cpct_dra   **** GX  |     cpct_dra   **** GX
+    cpct_dra   **** GX  |     cpct_get   **** GX  |     cpct_int   **** GX
+    cpct_isK   **** GX  |     cpct_lim   **** GX  |     cpct_sca   **** GX
+    cpct_set   **** GX  |     cpct_set   **** GX  |     cpct_set   **** GX
+    cpct_wai   **** GX  |     cpct_zx7   **** GX  |     e_distan=  000E 
+    e_h     =  0006     |     e_jump  =  0009     |     e_lastPt=  000A 
+    e_sp_h  =  0008     |     e_sp_l  =  0007     |     e_state =  000C 
+    e_type  =  0000     |     e_type_a=  0007     |     e_type_a=  0080 
+    e_type_c=  0070     |     e_type_c=  0010     |     e_type_c=  0004 
+    e_type_d=  0002     |     e_type_d=  0004     |     e_type_e=  00B0 
+    e_type_i=  0003     |     e_type_i=  0008     |     e_type_i=  0000 
+    e_type_p=  0006     |     e_type_p=  0040     |     e_type_p=  0018 
+    e_type_p=  0078     |     e_type_p=  0012     |     e_type_p=  0001 
+    e_type_p=  0002     |     e_type_r=  0005     |     e_type_r=  0020 
+    e_type_s=  0019     |     e_type_t=  0010     |     e_vx    =  0003 
+    e_vy    =  0004     |     e_w     =  0005     |     e_walkin=  000D 
+    e_x     =  0001     |     e_y     =  0002     |   0 end_x      0036 R
+  0 endif_x    003F R   |     gravity_=  FFFFFFF7 G   |   0 invalid_   002D R
+    man_enti   **** GX  |     man_enti   **** GX  |     man_enti   **** GX
+    man_enti   **** GX  |     man_enti   **** GX  |     man_enti   **** GX
+    man_enti   **** GX  |     man_enti   **** GX  |     man_enti   **** GX
+    man_enti   **** GX  |     screen_h=  00C8     |     screen_s=  C000 
+    screen_w=  0050     |     sizeof_e=  000F     |   0 start_x    003B R
+    sys_inpu   **** GX  |   0 sys_phys   0000 GR  |   0 sys_phys   007D GR
+  0 sys_phys   0013 GR  |     sys_rend   **** GX  |     sys_rend   **** GX
+    sys_rend   **** GX  |     sys_rend   **** GX  |     sys_rend   **** GX
+  0 valid_x    0028 R
+
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 2.
+Hexadecimal [16-Bits]
+
+Area Table
+
+   0 _CODE      size   86   flags    0
+

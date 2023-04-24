@@ -1,0 +1,21 @@
+XL2
+H 1 areas 12 global symbols
+S cpct_limpiarPantalla_asm Ref0000
+S cpct_setPalette_asm Ref0000
+S cpct_isKeyPressed_asm Ref0000
+S cpct_scanKeyboard_f_asm Ref0000
+S cpct_akp_stop_asm Ref0000
+S cpct_drawStringM0_asm Ref0000
+S cpct_interrupt_flow Ref0000
+S cpct_drawSprite_asm Ref0000
+S .__.ABS. Def0000
+S cpct_zx7b_decrunch_s_asm Ref0000
+S cpct_setVideoMode_asm Ref0000
+S cpct_waitVSYNC_asm Ref0000
+S cpct_akp_musicInit_asm Ref0000
+S cpct_disableFirmware_asm Ref0000
+S cpct_akp_musicPlay_asm Ref0000
+S cpct_drawSolidBox_asm Ref0000
+S cpct_setDrawCharM0_asm Ref0000
+S cpct_getScreenPtr_asm Ref0000
+A _CODE size 0 flags 0 addr 0

@@ -1,0 +1,187 @@
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 1.
+Hexadecimal [16-Bits]
+
+Symbol Table
+
+    .__.$$$.=  2710 L   |     .__.ABS.=  0000 G   |     .__.CPU.=  0000 L
+    .__.H$L.=  0000 L   |   0 _check_g   144F R   |   0 _check_l   1801 R
+  0 _check_l   1D80 R   |   0 _check_l   196C R   |   0 _check_l   168A R
+  0 _check_l   161B R   |   0 _check_l   1B31 R   |   0 _check_l   1882 R
+  0 _check_l   1540 R   |   0 _check_l   177A R   |   0 _check_l   1C93 R
+  0 _check_l   16F9 R   |   0 _check_l   1BD0 R   |   0 _check_l   1903 R
+  0 _check_l   1AB0 R   |   0 _check_l   15C4 R   |   0 _check_l   19FF R
+  0 _check_l   1585 R   |   0 _check_l   1507 R   |   0 _check_l   14DA R
+  0 _current   140B GR  |     _delimit   **** GX  |     _floor_c   **** GX
+  0 _game_no   1E40 R   |     _linea_p   **** GX  |   0 _no_load   1E3D R
+  0 _num_gam   0000 GR  |     _protago   **** GX  |     _protago   **** GX
+    _protago   **** GX  |     _protago   **** GX  |     _protago   **** GX
+    _screenc   **** GX  |     _screenc   **** GX  |     _screenh   **** GX
+    _screenm   **** GX  |     _screenw   **** GX  |     _song_in   **** GX
+    _song_me   **** GX  |     _tierra_   **** GX  |     _tiles_s   **** GX
+    _tiles_s   **** GX  |     _tiles_s   **** GX  |     _tiles_s   **** GX
+    _tiles_s   **** GX  |     _tiles_s   **** GX  |     _tiles_s   **** GX
+    _tiles_s   **** GX  |     _tiles_s   **** GX  |     _tiles_s   **** GX
+    _total_l=  0013     |   0 _update_   1441 R   |     _walls_s   **** GX
+    cpct_akp   **** GX  |     cpct_akp   **** GX  |     cpct_akp   **** GX
+    cpct_dis   **** GX  |     cpct_dra   **** GX  |     cpct_dra   **** GX
+    cpct_dra   **** GX  |     cpct_get   **** GX  |     cpct_int   **** GX
+    cpct_isK   **** GX  |     cpct_lim   **** GX  |     cpct_sca   **** GX
+    cpct_set   **** GX  |     cpct_set   **** GX  |     cpct_set   **** GX
+    cpct_wai   **** GX  |     cpct_zx7   **** GX  |     e_distan=  000E 
+    e_h     =  0006     |     e_jump  =  0009     |     e_lastPt=  000A 
+    e_sp_h  =  0008     |     e_sp_l  =  0007     |     e_state =  000C 
+    e_type  =  0000     |     e_type_a=  0007     |     e_type_a=  0080 
+    e_type_c=  0070     |     e_type_c=  0010     |     e_type_c=  0004 
+    e_type_d=  0002     |     e_type_d=  0004     |     e_type_e=  00B0 
+    e_type_i=  0003     |     e_type_i=  0008     |     e_type_i=  0000 
+    e_type_p=  0006     |     e_type_p=  0040     |     e_type_p=  0018 
+    e_type_p=  0078     |     e_type_p=  0012     |     e_type_p=  0001 
+    e_type_p=  0002     |     e_type_r=  0005     |     e_type_r=  0020 
+    e_type_s=  0019     |     e_type_t=  0010     |     e_vx    =  0003 
+    e_vy    =  0004     |     e_w     =  0005     |     e_walkin=  000D 
+    e_x     =  0001     |     e_y     =  0002     |   0 enemy101   08DA GR
+  0 enemy102   08E9 GR  |   0 enemy111   0A51 GR  |   0 enemy121   0BD7 GR
+  0 enemy131   0CE5 GR  |   0 enemy141   0E3E GR  |   0 enemy142   0E4D GR
+  0 enemy161   1000 GR  |   0 enemy162   100F GR  |   0 enemy171   1249 GR
+  0 enemy181   13ED GR  |   0 enemy182   13FC GR  |   0 enemy81    0718 GR
+  0 enemy91    0835 GR  |   0 enemy92    0844 GR  |   0 enemyh71   0628 GR
+    gravity_=  FFFFFFF7 G   |     man_enti   **** GX  |     man_enti   **** GX
+    man_enti   **** GX  |     man_enti   **** GX  |     man_enti   **** GX
+    man_enti   **** GX  |     man_enti   **** GX  |     man_enti   **** GX
+    man_enti   **** GX  |     man_enti   **** GX  |   0 man_game   1E41 GR
+  0 man_game   1E48 GR  |   0 man_game   147D GR  |   0 man_game   1E66 GR
+  0 man_game   1E5C GR  |   0 man_game   1E6F GR  |   0 man_game   140B GR
+  0 man_game   148C GR  |   0 man_game   1468 GR  |   0 man_game   1484 GR
+  0 man_game   1419 GR  |   0 man_game   1476 GR  |   0 man_game   1425 GR
+  0 platah00   003D GR  |   0 platah00   004C GR  |   0 platah01   0079 GR
+  0 platah02   0088 GR  |   0 platah03   0097 GR  |   0 platah04   00A6 GR
+  0 platah05   00B5 GR  |   0 platah10   0862 GR  |   0 platah10   0871 GR
+  0 platah10   0880 GR  |   0 platah10   088F GR  |   0 platah10   089E GR
+  0 platah10   08AD GR  |   0 platah10   08BC GR  |   0 platah10   08CB GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 2.
+Hexadecimal [16-Bits]
+
+Symbol Table
+
+  0 platah11   00D3 GR  |   0 platah11   0934 GR  |   0 platah11   09BB GR
+  0 platah11   09CA GR  |   0 platah11   09D9 GR  |   0 platah11   09E8 GR
+  0 platah11   09F7 GR  |   0 platah11   0A06 GR  |   0 platah11   0A15 GR
+  0 platah11   0943 GR  |   0 platah11   0952 GR  |   0 platah11   0961 GR
+  0 platah11   0970 GR  |   0 platah11   097F GR  |   0 platah11   098E GR
+  0 platah11   099D GR  |   0 platah11   09AC GR  |   0 platah12   00E2 GR
+  0 platah12   0A6F GR  |   0 platah12   0AF6 GR  |   0 platah12   0B05 GR
+  0 platah12   0B14 GR  |   0 platah12   0B23 GR  |   0 platah12   0B32 GR
+  0 platah12   0B41 GR  |   0 platah12   0B50 GR  |   0 platah12   0B5F GR
+  0 platah12   0B6E GR  |   0 platah12   0A7E GR  |   0 platah12   0A8D GR
+  0 platah12   0A9C GR  |   0 platah12   0AC9 GR  |   0 platah12   0AD8 GR
+  0 platah12   0AE7 GR  |   0 platah13   00F1 GR  |   0 platah13   0BF5 GR
+  0 platah13   0C7C GR  |   0 platah13   0C8B GR  |   0 platah13   0C9A GR
+  0 platah13   0CA9 GR  |   0 platah13   0CB8 GR  |   0 platah13   0C04 GR
+  0 platah13   0C13 GR  |   0 platah13   0C22 GR  |   0 platah13   0C31 GR
+  0 platah13   0C40 GR  |   0 platah13   0C4F GR  |   0 platah13   0C5E GR
+  0 platah13   0C6D GR  |   0 platah14   0100 GR  |   0 platah14   0D12 GR
+  0 platah14   0D99 GR  |   0 platah14   0DA8 GR  |   0 platah14   0DB7 GR
+  0 platah14   0DC6 GR  |   0 platah14   0DD5 GR  |   0 platah14   0DE4 GR
+  0 platah14   0D21 GR  |   0 platah14   0D30 GR  |   0 platah14   0D3F GR
+  0 platah14   0D4E GR  |   0 platah14   0D5D GR  |   0 platah14   0D6C GR
+  0 platah14   0D7B GR  |   0 platah14   0D8A GR  |   0 platah15   010F GR
+  0 platah16   011E GR  |   0 platah16   0E89 GR  |   0 platah16   0F10 GR
+  0 platah16   0F1F GR  |   0 platah16   0F2E GR  |   0 platah16   0F3D GR
+  0 platah16   0F4C GR  |   0 platah16   0E98 GR  |   0 platah16   0EA7 GR
+  0 platah16   0EB6 GR  |   0 platah16   0EC5 GR  |   0 platah16   0ED4 GR
+  0 platah16   0EE3 GR  |   0 platah16   0EF2 GR  |   0 platah16   0F01 GR
+  0 platah17   012D GR  |   0 platah17   10D2 GR  |   0 platah17   10E1 GR
+  0 platah17   10F0 GR  |   0 platah17   10FF GR  |   0 platah17   110E GR
+  0 platah17   111D GR  |   0 platah17   10C3 GR  |   0 platah17   104B GR
+  0 platah17   105A GR  |   0 platah17   1069 GR  |   0 platah17   1078 GR
+  0 platah17   1087 GR  |   0 platah17   1096 GR  |   0 platah17   10A5 GR
+  0 platah17   10B4 GR  |   0 platah18   1276 GR  |   0 platah18   1285 GR
+  0 platah18   130C GR  |   0 platah18   131B GR  |   0 platah18   132A GR
+  0 platah18   1294 GR  |   0 platah18   12A3 GR  |   0 platah18   12B2 GR
+  0 platah18   12C1 GR  |   0 platah18   12D0 GR  |   0 platah18   12DF GR
+  0 platah18   12EE GR  |   0 platah18   12FD GR  |   0 platah21   014B GR
+  0 platah22   015A GR  |   0 platah23   0169 GR  |   0 platah24   0178 GR
+  0 platah25   0187 GR  |   0 platah26   0196 GR  |   0 platah31   01B4 GR
+  0 platah32   01C3 GR  |   0 platah33   01D2 GR  |   0 platah34   01E1 GR
+  0 platah35   01F0 GR  |   0 platah36   01FF GR  |   0 platah37   020E GR
+  0 platah38   021D GR  |   0 platah41   0259 GR  |   0 platah42   0268 GR
+  0 platah43   0277 GR  |   0 platah44   0286 GR  |   0 platah45   0295 GR
+  0 platah46   02A4 GR  |   0 platah47   02B3 GR  |   0 platah48   02C2 GR
+  0 platah49   02D1 GR  |   0 platah51   033A GR  |   0 platah52   0349 GR
+  0 platah53   0358 GR  |   0 platah54   0367 GR  |   0 platah55   0376 GR
+  0 platah56   0385 GR  |   0 platah57   0394 GR  |   0 platah61   041B GR
+  0 platah62   042A GR  |   0 platah63   0439 GR  |   0 platah64   0448 GR
+  0 platah65   0457 GR  |   0 platah66   0466 GR  |   0 platah67   0475 GR
+  0 platah68   0484 GR  |   0 platah71   0529 GR  |   0 platah71   05B0 GR
+  0 platah71   05BF GR  |   0 platah71   05CE GR  |   0 platah71   05DD GR
+  0 platah71   05EC GR  |   0 platah72   0538 GR  |   0 platah73   0547 GR
+  0 platah74   0556 GR  |   0 platah75   0565 GR  |   0 platah76   0574 GR
+  0 platah77   0583 GR  |   0 platah78   0592 GR  |   0 platah79   05A1 GR
+  0 platah81   0646 GR  |   0 platah81   06CD GR  |   0 platah81   06DC GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 3.
+Hexadecimal [16-Bits]
+
+Symbol Table
+
+  0 platah81   06EB GR  |   0 platah82   0655 GR  |   0 platah83   0664 GR
+  0 platah84   0673 GR  |   0 platah85   0682 GR  |   0 platah86   0691 GR
+  0 platah87   06A0 GR  |   0 platah88   06AF GR  |   0 platah89   06BE GR
+  0 platah91   0754 GR  |   0 platah91   07DB GR  |   0 platah91   07EA GR
+  0 platah91   07F9 GR  |   0 platah92   0763 GR  |   0 platah93   0772 GR
+  0 platah94   0781 GR  |   0 platah95   0790 GR  |   0 platah96   079F GR
+  0 platah97   07AE GR  |   0 platah98   07BD GR  |   0 platah99   07CC GR
+  0 platav12   0AAB GR  |   0 platav12   0ABA GR  |   0 platav17   103C GR
+  0 platav58   03A3 GR  |   0 platav59   03B2 GR  |   0 platav81   06FA GR
+  0 platav82   0709 GR  |   0 player     001F GR  |   0 player14   0CF4 GR
+  0 player16   0E5C GR  |   0 player17   101E GR  |   0 player18   1258 GR
+  0 portal00   006A GR  |   0 portal00   002E GR  |   0 portal10   0853 GR
+  0 portal11   00C4 GR  |   0 portal11   0925 GR  |   0 portal12   0A60 GR
+  0 portal13   0BE6 GR  |   0 portal14   0D03 GR  |   0 portal16   0E6B GR
+  0 portal17   102D GR  |   0 portal18   1267 GR  |   0 portal20   013C GR
+  0 portal30   01A5 GR  |   0 portal40   024A GR  |   0 portal50   032B GR
+  0 portal60   040C GR  |   0 portal70   051A GR  |   0 portal80   0637 GR
+  0 portal90   0745 GR  |     screen_s=  C000     |     sizeof_e=  000F 
+  0 suelo1     0001 GR  |   0 suelo2     0010 GR  |     sys_ai_c   **** GX
+    sys_anim   **** GX  |     sys_coll   **** GX  |     sys_coll   **** GX
+    sys_coll   **** GX  |     sys_inpu   **** GX  |     sys_phys   **** GX
+    sys_phys   **** GX  |     sys_phys   **** GX  |     sys_rend   **** GX
+    sys_rend   **** GX  |     sys_rend   **** GX  |     sys_rend   **** GX
+    sys_rend   **** GX  |   0 tierra     005B GR  |   0 tierra16   0E7A GR
+  0 tramp101   08F8 GR  |   0 tramp102   0907 GR  |   0 tramp103   0916 GR
+  0 tramp111   0A24 GR  |   0 tramp112   0A33 GR  |   0 tramp113   0A42 GR
+  0 tramp121   0B7D GR  |   0 tramp122   0B8C GR  |   0 tramp123   0B9B GR
+  0 tramp124   0BAA GR  |   0 tramp125   0BB9 GR  |   0 tramp126   0BC8 GR
+  0 tramp131   0CC7 GR  |   0 tramp132   0CD6 GR  |   0 tramp141   0DF3 GR
+  0 tramp142   0E02 GR  |   0 tramp143   0E11 GR  |   0 tramp144   0E20 GR
+  0 tramp145   0E2F GR  |   0 tramp161   0F5B GR  |   0 tramp161   0FD3 GR
+  0 tramp161   0FE2 GR  |   0 tramp161   0FF1 GR  |   0 tramp162   0F6A GR
+  0 tramp163   0F79 GR  |   0 tramp165   0F88 GR  |   0 tramp166   0F97 GR
+  0 tramp167   0FA6 GR  |   0 tramp168   0FB5 GR  |   0 tramp169   0FC4 GR
+  0 tramp171   112C GR  |   0 tramp171   11C2 GR  |   0 tramp171   11D1 GR
+  0 tramp171   11E0 GR  |   0 tramp171   11EF GR  |   0 tramp171   11FE GR
+  0 tramp171   120D GR  |   0 tramp171   121C GR  |   0 tramp171   122B GR
+  0 tramp171   123A GR  |   0 tramp171   1168 GR  |   0 tramp172   113B GR
+  0 tramp173   114A GR  |   0 tramp174   1159 GR  |   0 tramp175   1177 GR
+  0 tramp176   1186 GR  |   0 tramp177   1195 GR  |   0 tramp178   11A4 GR
+  0 tramp179   11B3 GR  |   0 tramp181   1339 GR  |   0 tramp181   13B1 GR
+  0 tramp181   13C0 GR  |   0 tramp181   13CF GR  |   0 tramp181   13DE GR
+  0 tramp182   1348 GR  |   0 tramp183   1357 GR  |   0 tramp185   1366 GR
+  0 tramp186   1375 GR  |   0 tramp187   1384 GR  |   0 tramp188   1393 GR
+  0 tramp189   13A2 GR  |   0 tramp31    022C GR  |   0 tramp32    023B GR
+  0 tramp41    02E0 GR  |   0 tramp42    02EF GR  |   0 tramp43    02FE GR
+  0 tramp44    030D GR  |   0 tramp45    031C GR  |   0 tramp51    03C1 GR
+  0 tramp52    03D0 GR  |   0 tramp53    03DF GR  |   0 tramp54    03EE GR
+  0 tramp55    03FD GR  |   0 tramp61    0493 GR  |   0 tramp62    04A2 GR
+  0 tramp63    04B1 GR  |   0 tramp64    04C0 GR  |   0 tramp65    04CF GR
+  0 tramp66    04DE GR  |   0 tramp67    04ED GR  |   0 tramp68    04FC GR
+  0 tramp69    050B GR  |   0 tramp71    05FB GR  |   0 tramp72    060A GR
+  0 tramp73    0619 GR  |   0 tramp80    0727 GR  |   0 tramp81    0736 GR
+  0 tramp91    0808 GR  |   0 tramp92    0817 GR  |   0 tramp93    0826 GR
+
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 4.
+Hexadecimal [16-Bits]
+
+Area Table
+
+   0 _CODE      size 1E73   flags    0
+

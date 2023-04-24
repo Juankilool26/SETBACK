@@ -1,0 +1,9 @@
+XL2
+H 1 areas 6 global symbols
+S sys_render_update_clear Ref0000
+S sys_render_init Ref0000
+S .__.ABS. Def0000
+S sys_render_update Ref0000
+S sys_render_update_all Ref0000
+S sys_render_update_one_entity Ref0000
+A _CODE size 0 flags 0 addr 0

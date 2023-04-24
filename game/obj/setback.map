@@ -1,0 +1,777 @@
+ASxxxx Linker V03.00 + NoICE + sdld,  page 1.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00000000  .__.ABS.                           cpct_strings
+     00000000  SCREEN_CONTROLS_OFF                
+     00000000  SCREEN_CONTROLS_PALETTE_OFF        
+     00000000  SCREEN_CONTROLS_PALETTE_SIZE       
+     00000000  SCREEN_CREDITS_OFF                 
+     00000000  SCREEN_CREDITS_PALETTE_OFF         
+     00000000  SCREEN_CREDITS_PALETTE_SIZE        
+     00000000  SCREEN_HISTORY_OFF                 
+     00000000  SCREEN_HISTORY_PALETTE_OFF         
+     00000000  SCREEN_HISTORY_PALETTE_SIZE        
+     00000000  SCREEN_MENU_OFF                    
+     00000000  SCREEN_MENU_PALETTE_OFF            
+     00000000  SCREEN_MENU_PALETTE_SIZE           
+     00000000  SCREEN_WIN_OFF                     
+     00000000  SCREEN_WIN_PALETTE_OFF             
+     00000000  SCREEN_WIN_PALETTE_SIZE            
+     00000000  l__CABS                         
+     00000000  l__DABS                         
+     00000000  l__DATA                         
+     00000000  l__GSFINAL                      
+     00000000  l__GSINIT                       
+     00000000  l__HOME                         
+     00000000  l__INITIALIZED                  
+     00000000  l__INITIALIZER                  
+     00000000  l___song_ingame                 
+     00000000  l___song_menu                   
+     00000000  s__CABS                         
+     00000000  s__DABS                         
+     00000000  s___song_ingame                 
+     00000000  s___song_ingame0                
+     00000000  s___song_menu                   
+     00000000  s___song_menu0                  
+     00000028  max_entities                       cpct_keyboard
+     00000050  SCREEN_CONTROLS_W                  
+     00000050  SCREEN_CREDITS_W                   
+     00000050  SCREEN_HISTORY_W                   
+     00000050  SCREEN_MENU_W                      
+     00000050  SCREEN_WIN_W                       
+     000000C8  SCREEN_CONTROLS_H                  
+     000000C8  SCREEN_CREDITS_H                   
+     000000C8  SCREEN_HISTORY_H                   
+     000000C8  SCREEN_MENU_H                      
+     000000C8  SCREEN_WIN_H                       
+     00000193  l___song_menu0                  
+     000002DA  l___song_ingame0                
+     000018DA  s__CODE                         
+     00004000  SCREEN_CONTROLS_SIZE               
+     00004000  SCREEN_CREDITS_SIZE                
+     00004000  SCREEN_HISTORY_SIZE                
+     00004000  SCREEN_MENU_SIZE                   
+ASxxxx Linker V03.00 + NoICE + sdld,  page 2.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00004000  SCREEN_WIN_SIZE                    
+     00005A95  l__CODE                         
+     0000736F  s__DATA                         
+     0000736F  s__GSFINAL                      
+     0000736F  s__GSINIT                       
+     0000736F  s__HOME                         
+     0000736F  s__INITIALIZED                  
+     0000736F  s__INITIALIZER                  
+     0000FFF7  gravity_acc                        
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 3.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+_CODE                               000018DA    00005A95 =       23189. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000018DA  _tierra_pal                        tierra
+     000018EA  _tierra_sp_0                       tierra
+     00001AAC  _tierra_sp_1                       tierra
+     00001ACA  _tierra_sp_2                       tierra
+     00001AD9  _tierra_sp_3                       tierra
+     00001ADA  _demitador_pal                     delimitador
+     00001AEA  _delimitador_sp_0                  delimitador
+     00001C7A  _delimitador_sp_1                  delimitador
+     00001E0A  _linea_pin_pal                     lineadepinxos
+     00001E1A  _linea_pin_sp                      lineadepinxos
+     0000200E  _tiles_pal                         tiles
+     0000201E  _tiles_sp_00                       tiles
+     00002050  _tiles_sp_01                       tiles
+     00002082  _tiles_sp_02                       tiles
+     000020B4  _tiles_sp_03                       tiles
+     000020E6  _tiles_sp_04                       tiles
+     00002118  _tiles_sp_05                       tiles
+     0000214A  _tiles_sp_06                       tiles
+     0000217C  _tiles_sp_07                       tiles
+     000021AE  _tiles_sp_08                       tiles
+     000021E0  _tiles_sp_09                       tiles
+     00002212  _walls_pal                         walls
+     00002222  _walls_sp_0                        walls
+     000022B8  _walls_sp_1                        walls
+     0000234E  _walls_sp_2                        walls
+     000023E4  _walls_sp_3                        walls
+     0000247A  _walls_sp_4                        walls
+     00002510  _walls_sp_5                        walls
+     000025A6  _floor_ceiling_pal                 floor_ceiling
+     000025B6  _floor_ceiling_sp_0                floor_ceiling
+     0000264C  _floor_ceiling_sp_1                floor_ceiling
+     000026E2  _floor_ceiling_sp_2                floor_ceiling
+     00002778  _floor_ceiling_sp_3                floor_ceiling
+     0000280E  _floor_ceiling_sp_4                floor_ceiling
+     00002872  _protagonista_pal                  protagonista
+     00002882  _protagonista_sp_0                 protagonista
+     000028B4  _protagonista_sp_1                 protagonista
+     000028E6  _protagonista_sp_2                 protagonista
+     00002918  _protagonista_sp_3                 protagonista
+     0000294A  _screenwin_z                       
+     00002DAA  _screenwin_z_end                   
+     00002DAB  _screencontrols_z                  
+     0000339D  _screencontrols_z_end              
+     0000339E  _screenhistory_z                   
+     00003962  _screenhistory_z_end               
+     00003963  _screencredits_z                   
+     00003ECA  _screencredits_z_end               
+     00003ECB  _screenmenu_z                      
+     000041E3  _screenmenu_z_end                  
+     000041E4  _main                              cpct_keyboard
+ASxxxx Linker V03.00 + NoICE + sdld,  page 4.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+_CODE                               000018DA    00005A95 =       23189. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     0000423A  cpct_limpiarPantalla_asm           cpct_keyboard
+     00004248  cpct_interrupt_flow                cpct_keyboard
+     0000424D  sys_ai_control_update_one_entity   
+     0000433D  sys_ai_control_update              
+     00004346  sys_animation_update               
+     00004384  sys_collision_update_one_entity    
+     000043F7  sys_collision_correct_position     
+     00004419  sys_collision_update               
+     00004422  sys_input_update                   cpct_keyboard
+     00004486  sys_physics_calculate_previous_p   
+     00004499  sys_physics_update_one_entity      
+     00004503  sys_physics_update                 
+     0000450C  sys_render_init                    cpct_keyboard
+     00004521  sys_render_update_one_entity_cle   cpct_keyboard
+     00004533  sys_render_update_one_entity       cpct_keyboard
+     00004577  sys_render_update_all              cpct_keyboard
+     0000457E  sys_render_update                  cpct_keyboard
+     00004597  sys_render_update_clear            cpct_keyboard
+     000045A8  _num_entities                      cpct_keyboard
+     000045A8  man_entity_init                    cpct_keyboard
+     000045A9  _entity_array                      cpct_keyboard
+     00004801  _last_elem_ptr                     cpct_keyboard
+     00004804  man_entity_getPlayer_IX            cpct_keyboard
+     00004809  man_entity_get_from_idx_IY         cpct_keyboard
+     00004818  man_entity_create                  cpct_keyboard
+     0000483A  man_entity_calculate_screen_posi   cpct_keyboard
+     0000484D  man_entity_update_forall           cpct_keyboard
+     00004863  man_entity_update_forall_matchin   cpct_keyboard
+     00004887  man_entity_set4destruction         cpct_keyboard
+     0000488C  man_entity_destroy_one             cpct_keyboard
+     00004891  man_entity_empty_array             cpct_keyboard
+     0000489D  _num_games                         
+     0000489E  suelo1                             
+     000048AD  suelo2                             
+     000048BC  player                             
+     000048CB  portal000                          
+     000048DA  platah001                          
+     000048E9  platah002                          
+     000048F8  tierra                             
+     00004907  portal00                           
+     00004916  platah01                           
+     00004925  platah02                           
+     00004934  platah03                           
+     00004943  platah04                           
+     00004952  platah05                           
+     00004961  portal11                           
+     00004970  platah11                           
+     0000497F  platah12                           
+     0000498E  platah13                           
+     0000499D  platah14                           
+     000049AC  platah15                           
+ASxxxx Linker V03.00 + NoICE + sdld,  page 5.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+_CODE                               000018DA    00005A95 =       23189. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000049BB  platah16                           
+     000049CA  platah17                           
+     000049D9  portal20                           
+     000049E8  platah21                           
+     000049F7  platah22                           
+     00004A06  platah23                           
+     00004A15  platah24                           
+     00004A24  platah25                           
+     00004A33  platah26                           
+     00004A42  portal30                           
+     00004A51  platah31                           
+     00004A60  platah32                           
+     00004A6F  platah33                           
+     00004A7E  platah34                           
+     00004A8D  platah35                           
+     00004A9C  platah36                           
+     00004AAB  platah37                           
+     00004ABA  platah38                           
+     00004AC9  tramp31                            
+     00004AD8  tramp32                            
+     00004AE7  portal40                           
+     00004AF6  platah41                           
+     00004B05  platah42                           
+     00004B14  platah43                           
+     00004B23  platah44                           
+     00004B32  platah45                           
+     00004B41  platah46                           
+     00004B50  platah47                           
+     00004B5F  platah48                           
+     00004B6E  platah49                           
+     00004B7D  tramp41                            
+     00004B8C  tramp42                            
+     00004B9B  tramp43                            
+     00004BAA  tramp44                            
+     00004BB9  tramp45                            
+     00004BC8  portal50                           
+     00004BD7  platah51                           
+     00004BE6  platah52                           
+     00004BF5  platah53                           
+     00004C04  platah54                           
+     00004C13  platah55                           
+     00004C22  platah56                           
+     00004C31  platah57                           
+     00004C40  platav58                           
+     00004C4F  platav59                           
+     00004C5E  tramp51                            
+     00004C6D  tramp52                            
+     00004C7C  tramp53                            
+     00004C8B  tramp54                            
+     00004C9A  tramp55                            
+     00004CA9  portal60                           
+ASxxxx Linker V03.00 + NoICE + sdld,  page 6.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+_CODE                               000018DA    00005A95 =       23189. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00004CB8  platah61                           
+     00004CC7  platah62                           
+     00004CD6  platah63                           
+     00004CE5  platah64                           
+     00004CF4  platah65                           
+     00004D03  platah66                           
+     00004D12  platah67                           
+     00004D21  platah68                           
+     00004D30  tramp61                            
+     00004D3F  tramp62                            
+     00004D4E  tramp63                            
+     00004D5D  tramp64                            
+     00004D6C  tramp65                            
+     00004D7B  tramp66                            
+     00004D8A  tramp67                            
+     00004D99  tramp68                            
+     00004DA8  tramp69                            
+     00004DB7  portal70                           
+     00004DC6  platah71                           
+     00004DD5  platah72                           
+     00004DE4  platah73                           
+     00004DF3  platah74                           
+     00004E02  platah75                           
+     00004E11  platah76                           
+     00004E20  platah77                           
+     00004E2F  platah78                           
+     00004E3E  platah79                           
+     00004E4D  platah710                          
+     00004E5C  platah711                          
+     00004E6B  platah712                          
+     00004E7A  platah713                          
+     00004E89  platah714                          
+     00004E98  tramp71                            
+     00004EA7  tramp72                            
+     00004EB6  tramp73                            
+     00004EC5  enemyh71                           
+     00004ED4  portal80                           
+     00004EE3  platah81                           
+     00004EF2  platah82                           
+     00004F01  platah83                           
+     00004F10  platah84                           
+     00004F1F  platah85                           
+     00004F2E  platah86                           
+     00004F3D  platah87                           
+     00004F4C  platah88                           
+     00004F5B  platah89                           
+     00004F6A  platah810                          
+     00004F79  platah811                          
+     00004F88  platah812                          
+     00004F97  platav81                           
+     00004FA6  platav82                           
+ASxxxx Linker V03.00 + NoICE + sdld,  page 7.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+_CODE                               000018DA    00005A95 =       23189. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00004FB5  enemy81                            
+     00004FC4  tramp80                            
+     00004FD3  tramp81                            
+     00004FE2  portal90                           
+     00004FF1  platah91                           
+     00005000  platah92                           
+     0000500F  platah93                           
+     0000501E  platah94                           
+     0000502D  platah95                           
+     0000503C  platah96                           
+     0000504B  platah97                           
+     0000505A  platah98                           
+     00005069  platah99                           
+     00005078  platah910                          
+     00005087  platah911                          
+     00005096  platah912                          
+     000050A5  tramp91                            
+     000050B4  tramp92                            
+     000050C3  tramp93                            
+     000050D2  enemy91                            
+     000050E1  enemy92                            
+     000050F0  portal100                          
+     000050FF  platah101                          
+     0000510E  platah102                          
+     0000511D  platah103                          
+     0000512C  platah104                          
+     0000513B  platah105                          
+     0000514A  platah106                          
+     00005159  platah107                          
+     00005168  platah108                          
+     00005177  enemy101                           
+     00005186  enemy102                           
+     00005195  tramp101                           
+     000051A4  tramp102                           
+     000051B3  tramp103                           
+     000051C2  portal110                          
+     000051D1  platah111                          
+     000051E0  platah112                          
+     000051EF  platah113                          
+     000051FE  platah114                          
+     0000520D  platah115                          
+     0000521C  platah116                          
+     0000522B  platah117                          
+     0000523A  platah118                          
+     00005249  platah119                          
+     00005258  platah1110                         
+     00005267  platah1111                         
+     00005276  platah1112                         
+     00005285  platah1113                         
+     00005294  platah1114                         
+     000052A3  platah1115                         
+ASxxxx Linker V03.00 + NoICE + sdld,  page 8.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+_CODE                               000018DA    00005A95 =       23189. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000052B2  platah1116                         
+     000052C1  tramp111                           
+     000052D0  tramp112                           
+     000052DF  tramp113                           
+     000052EE  enemy111                           
+     000052FD  portal120                          
+     0000530C  platah121                          
+     0000531B  platah122                          
+     0000532A  platah123                          
+     00005339  platah124                          
+     00005348  platav125                          
+     00005357  platav126                          
+     00005366  platah127                          
+     00005375  platah128                          
+     00005384  platah129                          
+     00005393  platah1210                         
+     000053A2  platah1211                         
+     000053B1  platah1212                         
+     000053C0  platah1213                         
+     000053CF  platah1214                         
+     000053DE  platah1215                         
+     000053ED  platah1216                         
+     000053FC  platah1217                         
+     0000540B  platah1218                         
+     0000541A  tramp121                           
+     00005429  tramp122                           
+     00005438  tramp123                           
+     00005447  tramp124                           
+     00005456  tramp125                           
+     00005465  tramp126                           
+     00005474  enemy121                           
+     00005483  portal130                          
+     00005492  platah131                          
+     000054A1  platah132                          
+     000054B0  platah133                          
+     000054BF  platah134                          
+     000054CE  platah135                          
+     000054DD  platah136                          
+     000054EC  platah137                          
+     000054FB  platah138                          
+     0000550A  platah139                          
+     00005519  platah1310                         
+     00005528  platah1311                         
+     00005537  platah1312                         
+     00005546  platah1313                         
+     00005555  platah1314                         
+     00005564  tramp131                           
+     00005573  tramp132                           
+     00005582  enemy131                           
+     00005591  player140                          
+     000055A0  portal140                          
+ASxxxx Linker V03.00 + NoICE + sdld,  page 9.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+_CODE                               000018DA    00005A95 =       23189. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000055AF  platah141                          
+     000055BE  platah142                          
+     000055CD  platah143                          
+     000055DC  platah144                          
+     000055EB  platah145                          
+     000055FA  platah146                          
+     00005609  platah147                          
+     00005618  platah148                          
+     00005627  platah149                          
+     00005636  platah1410                         
+     00005645  platah1411                         
+     00005654  platah1412                         
+     00005663  platah1413                         
+     00005672  platah1414                         
+     00005681  platah1415                         
+     00005690  tramp141                           
+     0000569F  tramp142                           
+     000056AE  tramp143                           
+     000056BD  tramp144                           
+     000056CC  tramp145                           
+     000056DB  enemy141                           
+     000056EA  enemy142                           
+     000056F9  player16                           
+     00005708  portal160                          
+     00005717  tierra16                           
+     00005726  platah161                          
+     00005735  platah162                          
+     00005744  platah163                          
+     00005753  platah164                          
+     00005762  platah165                          
+     00005771  platah166                          
+     00005780  platah167                          
+     0000578F  platah168                          
+     0000579E  platah169                          
+     000057AD  platah1610                         
+     000057BC  platah1611                         
+     000057CB  platah1612                         
+     000057DA  platah1613                         
+     000057E9  platah1614                         
+     000057F8  tramp161                           
+     00005807  tramp162                           
+     00005816  tramp163                           
+     00005825  tramp165                           
+     00005834  tramp166                           
+     00005843  tramp167                           
+     00005852  tramp168                           
+     00005861  tramp169                           
+     00005870  tramp1610                          
+     0000587F  tramp1611                          
+     0000588E  tramp1612                          
+     0000589D  enemy161                           
+ASxxxx Linker V03.00 + NoICE + sdld,  page 10.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+_CODE                               000018DA    00005A95 =       23189. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000058AC  enemy162                           
+     000058BB  player17                           
+     000058CA  portal170                          
+     000058D9  platav171                          
+     000058E8  platah172                          
+     000058F7  platah173                          
+     00005906  platah174                          
+     00005915  platah175                          
+     00005924  platah176                          
+     00005933  platah177                          
+     00005942  platah178                          
+     00005951  platah179                          
+     00005960  platah1716                         
+     0000596F  platah1710                         
+     0000597E  platah1711                         
+     0000598D  platah1712                         
+     0000599C  platah1713                         
+     000059AB  platah1714                         
+     000059BA  platah1715                         
+     000059C9  tramp171                           
+     000059D8  tramp172                           
+     000059E7  tramp173                           
+     000059F6  tramp174                           
+     00005A05  tramp1719                          
+     00005A14  tramp175                           
+     00005A23  tramp176                           
+     00005A32  tramp177                           
+     00005A41  tramp178                           
+     00005A50  tramp179                           
+     00005A5F  tramp1710                          
+     00005A6E  tramp1711                          
+     00005A7D  tramp1712                          
+     00005A8C  tramp1713                          
+     00005A9B  tramp1714                          
+     00005AAA  tramp1715                          
+     00005AB9  tramp1716                          
+     00005AC8  tramp1717                          
+     00005AD7  tramp1718                          
+     00005AE6  enemy171                           
+     00005AF5  player180                          
+     00005B04  portal180                          
+     00005B13  platah180                          
+     00005B22  platah181                          
+     00005B31  platah182                          
+     00005B40  platah183                          
+     00005B4F  platah184                          
+     00005B5E  platah185                          
+     00005B6D  platah186                          
+     00005B7C  platah187                          
+     00005B8B  platah188                          
+     00005B9A  platah189                          
+ASxxxx Linker V03.00 + NoICE + sdld,  page 11.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+_CODE                               000018DA    00005A95 =       23189. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00005BA9  platah1810                         
+     00005BB8  platah1811                         
+     00005BC7  platah1812                         
+     00005BD6  tramp181                           
+     00005BE5  tramp182                           
+     00005BF4  tramp183                           
+     00005C03  tramp185                           
+     00005C12  tramp186                           
+     00005C21  tramp187                           
+     00005C30  tramp188                           
+     00005C3F  tramp189                           
+     00005C4E  tramp1810                          
+     00005C5D  tramp1811                          
+     00005C6C  tramp1812                          
+     00005C7B  tramp1813                          
+     00005C8A  enemy181                           
+     00005C99  enemy182                           
+     00005CA8  _current_level                     
+     00005CA8  man_game_init                      
+     00005CB6  man_game_restart                   
+     00005CC2  man_game_run                       
+     00005D05  man_game_load_next_level           
+     00005D13  man_game_restart_level             
+     00005D1A  man_game_continue_level            
+     00005D21  man_game_next_play                 
+     00005D29  man_game_load_level                
+     000066DE  man_game_clean_next_level          
+     000066E5  man_game_clean_restart             
+     000066F9  man_game_empty_array               
+     00006703  man_game_destroy_all_enemies       
+     0000670C  man_game_getNumGames_A             
+     00006711  int_handler                        cpct_keyboard
+     0000672A  set_int_handler                    cpct_keyboard
+     00006739  man_int_load_menu_song             cpct_keyboard
+     00006740  man_int_load_ingame_song           cpct_keyboard
+     00006747  linea_men_ini_0                    cpct_keyboard
+     0000674D  linea_men_ini_1                    cpct_keyboard
+     0000675F  linea_men_ini_2                    cpct_keyboard
+     0000676D  man_menu_init                      cpct_keyboard
+     00006771  man_menu_run                       cpct_keyboard
+     000067C1  man_menu_draw_menu_change          cpct_keyboard
+     000067C8  man_menu_pause_run                 cpct_keyboard
+     00006814  man_menu_win_run                   cpct_keyboard
+     00006826  _cpct_scanKeyboard_f               cpct_keyboard
+     00006826  cpct_scanKeyboard_f_asm            cpct_keyboard
+     00006890  _cpct_isKeyPressed                 cpct_keyboard
+     00006890  cpct_isKeyPressed_asm              cpct_keyboard
+     0000689C  cpct_setPalette_asm                cpct_video
+     000068AF  cpct_setPALColour_asm              cpct_video
+     000068B9  _cpct_akp_digidrumStatus           cpct_audio
+     000068BA  _cpct_akp_songLoopTimes            cpct_audio
+ASxxxx Linker V03.00 + NoICE + sdld,  page 12.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+_CODE                               000018DA    00005A95 =       23189. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000068BB  _cpct_akp_musicPlay                cpct_audio
+     000068BB  cpct_akp_musicPlay_asm             cpct_audio
+     00006FBE  _cpct_akp_musicInit                cpct_audio
+     00006FC5  cpct_akp_musicInit_asm             cpct_audio
+     0000701E  _cpct_akp_stop                     cpct_audio
+     0000701E  cpct_akp_stop_asm                  cpct_audio
+     00007031  _cpct_akp_SFXGetInstrument         cpct_audio
+     00007036  cpct_akp_SFXGetInstrument_asm      cpct_audio
+     0000704A  _cpct_akp_SFXInit                  cpct_audio
+     00007051  cpct_akp_SFXInit_asm               cpct_audio
+     00007058  _cpct_akp_SFXStopAll               cpct_audio
+     00007058  cpct_akp_SFXStopAll_asm            cpct_audio
+     00007065  _cpct_akp_SFXPlay                  cpct_audio
+     00007077  cpct_akp_SFXPlay_asm               cpct_audio
+     000070C4  _cpct_akp_SFXStop                  cpct_audio
+     000070C9  cpct_akp_SFXStop_asm               cpct_audio
+     000070E2  cpct_drawStringM0_asm              cpct_strings
+     00007108  cpct_drawCharM0_inner_asm          cpct_strings
+     00007168  dc_2pxtableM0                      cpct_strings
+     0000716C  cpct_drawSprite_asm                cpct_sprites
+     0000720C  _cpct_keyboardStatusBuffer         cpct_keyboard
+     00007216  _cpct_waitVSYNC                    cpct_video
+     00007216  cpct_waitVSYNC_asm                 cpct_video
+     0000721E  cpct_setVideoMode_asm              cpct_video
+     0000722B  cpct_zx7b_decrunch_s_asm           cpct_compression
+     0000726B  _cpct_disableFirmware              cpct_firmware
+     0000726B  _cpct_removeInterruptHandler       cpct_firmware
+     0000726B  cpct_disableFirmware_asm           cpct_firmware
+     0000726B  cpct_removeInterruptHandler_asm    cpct_firmware
+     0000727B  cpct_drawSolidBox_asm              cpct_sprites
+     0000731F  _cpct_mode_rom_status              cpct_firmware
+     00007320  cpct_setDrawCharM0_asm             cpct_strings
+     00007343  cpct_getScreenPtr_asm              cpct_video
+     0000735F  dc_mode0_ct                        cpct_strings
+ASxxxx Linker V03.00 + NoICE + sdld,  page 13.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+__song_ingame0                      00000000    000002DA =         730. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000001D2  _song_ingame                       
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 14.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+__song_menu0                        00000000    00000193 =         403. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00000040  _song_menu                         
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 15.
+
+Files Linked                              [ module(s) ]
+
+obj/sprites/tierra.rel                    [ tierra ]
+obj/sprites/delimitador.rel               [ delimitador ]
+obj/sprites/lineadepinxos.rel             [ lineadepinxos ]
+obj/sprites/tiles.rel                     [ tiles ]
+obj/sprites/walls.rel                     [ walls ]
+obj/sprites/floor_ceiling.rel             [ floor_ceiling ]
+obj/sprites/protagonista.rel              [ protagonista ]
+img/screenwin_z.rel                       [  ]
+img/screencontrols_z.rel                  [  ]
+img/screenhistory_z.rel                   [  ]
+img/screencredits_z.rel                   [  ]
+img/screenmenu_z.rel                      [  ]
+music/ingame.rel                          [  ]
+music/menu.rel                            [  ]
+obj/sprites/sWin.h.rel                    [  ]
+obj/sprites/sControls.h.rel               [  ]
+obj/sprites/sHistory.h.rel                [  ]
+obj/sprites/sCredits.h.rel                [  ]
+obj/sprites/sMenu.h.rel                   [  ]
+obj/cpctelera_functions.h.rel             [  ]
+obj/main.rel                              [ cpct_keyboard ]
+obj/sys/ai_control.h.rel                  [  ]
+obj/sys/ai_control.rel                    [  ]
+obj/sys/animation.h.rel                   [  ]
+obj/sys/animation.rel                     [  ]
+obj/sys/collision.h.rel                   [  ]
+obj/sys/collision.rel                     [  ]
+obj/sys/input.h.rel                       [  ]
+obj/sys/input.rel                         [ cpct_keyboard ]
+obj/sys/physics.h.rel                     [  ]
+obj/sys/physics.rel                       [  ]
+obj/sys/render.h.rel                      [  ]
+obj/sys/render.rel                        [ cpct_keyboard ]
+obj/man/entity.h.rel                      [  ]
+obj/man/entity.rel                        [ cpct_keyboard ]
+obj/man/game.h.rel                        [  ]
+obj/man/game.rel                          [  ]
+obj/man/interrupcion.h.rel                [  ]
+obj/man/interrupcion.rel                  [ cpct_keyboard ]
+obj/man/menu.h.rel                        [  ]
+obj/man/menu.rel                          [ cpct_keyboard ]
+obj/assets/assets.h.rel                   [  ]
+
+
+Libraries Linked                          [ object file ]
+
+/home/gabriel/Escritorio/Videojuegos/cpctelera/cpctelera/cpctelera.lib
+                                          [ cpct_scanKeyboard_f.rel ]
+/home/gabriel/Escritorio/Videojuegos/cpctelera/cpctelera/cpctelera.lib
+                                          [ cpct_isKeyPressed.rel ]
+/home/gabriel/Escritorio/Videojuegos/cpctelera/cpctelera/cpctelera.lib
+                                          [ cpct_setPalette_asmbindings.rel ]
+/home/gabriel/Escritorio/Videojuegos/cpctelera/cpctelera/cpctelera.lib
+                                          [ cpct_setPALColour_asmbindings.re ]
+/home/gabriel/Escritorio/Videojuegos/cpctelera/cpctelera/cpctelera.lib
+                                          [ arkostracker.rel ]
+/home/gabriel/Escritorio/Videojuegos/cpctelera/cpctelera/cpctelera.lib
+                                          [ cpct_drawStringM0_asmbindings.re ]
+/home/gabriel/Escritorio/Videojuegos/cpctelera/cpctelera/cpctelera.lib
+                                          [ cpct_drawCharM0_inner.rel ]
+/home/gabriel/Escritorio/Videojuegos/cpctelera/cpctelera/cpctelera.lib
+                                          [ cpct_drawSprite_asmbindings.rel ]
+/home/gabriel/Escritorio/Videojuegos/cpctelera/cpctelera/cpctelera.lib
+                                          [ keyboard.rel ]
+/home/gabriel/Escritorio/Videojuegos/cpctelera/cpctelera/cpctelera.lib
+                                          [ cpct_waitVSYNC.rel ]
+/home/gabriel/Escritorio/Videojuegos/cpctelera/cpctelera/cpctelera.lib
+                                          [ cpct_setVideoMode_asmbindings.re ]
+/home/gabriel/Escritorio/Videojuegos/cpctelera/cpctelera/cpctelera.lib
+                                          [ cpct_zx7b_decrunch_s_asmbindings ]
+/home/gabriel/Escritorio/Videojuegos/cpctelera/cpctelera/cpctelera.lib
+                                          [ cpct_removeInterruptHandler.rel ]
+/home/gabriel/Escritorio/Videojuegos/cpctelera/cpctelera/cpctelera.lib
+                                          [ cpct_drawSolidBox_asmbindings.re ]
+/home/gabriel/Escritorio/Videojuegos/cpctelera/cpctelera/cpctelera.lib
+                                          [ cpc_mode_rom_status.rel ]
+/home/gabriel/Escritorio/Videojuegos/cpctelera/cpctelera/cpctelera.lib
+                                          [ cpct_setDrawCharM0_asmbindings.r ]
+/home/gabriel/Escritorio/Videojuegos/cpctelera/cpctelera/cpctelera.lib
+                                          [ cpct_getScreenPtr_asmbindings.re ]
+/home/gabriel/Escritorio/Videojuegos/cpctelera/cpctelera/cpctelera.lib
+                                          [ cpct_dc_mode0_ct.rel ]
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 16.
+
+User Base Address Definitions
+
+_CODE = 0x18da
+_DATA = 0x0000
+
+
